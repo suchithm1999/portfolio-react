@@ -68,7 +68,7 @@ function Sidebar() {
           to="home"
           spy={true}
           smooth={true}
-          offset={-50}
+          offset={-100}
           duration={500}
           onSetActive={handleSetActive}
           className={`${activeLink === "home" ? "active" : ""} flex p-4 pl-5 px-8 items-center gap-4 text-sm border text-gray-900 border-x-0 hover:text-blue-700 hover:bg-gray-100 cursor-pointer font-medium`}
@@ -80,7 +80,7 @@ function Sidebar() {
           to="about"
           spy={true}
           smooth={true}
-          offset={-50}
+          offset={-150}
           duration={500}
           onSetActive={handleSetActive}
           className={`${activeLink === "about" ? "active" : ""} flex p-4 pl-5 px-8 border-t-0 items-center gap-4 text-sm border text-gray-900 border-x-0 hover:text-blue-700 hover:bg-gray-100 cursor-pointer font-medium`}
