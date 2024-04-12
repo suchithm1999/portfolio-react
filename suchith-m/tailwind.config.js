@@ -26,9 +26,9 @@ export default {
         typing: "typing 2s steps(20) infinite alternate, blink .7s infinite",
       },
       backgroundImage: {
-        "map-image": "url('/src/assets/map.png')",
-        "suchith-image": "url('/src/assets/suchith_m.jpeg')",
-        "office-background": "url('/src/assets/office-image-bg.webp')",
+        "map-image": "url('../public/map.png')",
+        "suchith-image": "url('../public/suchith_m.jpeg')",
+        "office-background": "url('../public/office-image-bg.webp')",
       },
     },
   },

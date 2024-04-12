@@ -16,7 +16,7 @@ function App() {
           />
           <div className="relative">
             <img
-              src="/src/assets/wave.png"
+              src="../public/wave.png"
               style={{ zIndex: 2 }}
               className="w-full absolute -bottom-px object-fill"
             />
