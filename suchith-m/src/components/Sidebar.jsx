@@ -20,7 +20,7 @@ function Sidebar() {
   };
 
   const downloadResume = () => {
-    const fileUrl = "../public/Suchith M.pdf";
+    const fileUrl = "/Suchith M.pdf";
     const a = document.createElement("a");
     a.href = fileUrl;
     a.download = "Suchith M.pdf";
@@ -52,7 +52,7 @@ function Sidebar() {
       <div className="w-full h-full">
         <div className="p-5 flex justify-center flex-col items-center bg-map-image">
           <img
-            src="../public/suchith_m.jpeg"
+            src="/suchith_m.jpeg"
             className="w-36 h-36 rounded-full object-cover"
           />
           <span className="text-xl font-serif font-semibold text-600 pt-5">
