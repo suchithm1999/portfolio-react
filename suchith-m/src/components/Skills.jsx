@@ -9,7 +9,7 @@ function Skills() {
           Skills
         </span>
         <div className="w-4/5 flex flex-wrap justify-evenly mt-5 ">
-          <div className="flex flex-col items-center justify-center text-center gap-2 drop-shadow-2xl shadow-indigo-50 bg-opacity-100 bg-white hover:shadow-2xl hover:shadow-indigo-300 rounded hover:rounded-tl-3xl hover:rounded-br-3xl max-w-64 max-h-64 m-8 max-lg:m-4 p-8">
+          <div className="flex flex-col items-center justify-between text-center gap-2 drop-shadow-2xl shadow-indigo-50 bg-opacity-100 bg-white hover:shadow-2xl hover:shadow-indigo-300 rounded hover:rounded-tl-3xl hover:rounded-br-3xl max-w-64 max-h-64 m-8 max-lg:m-4 p-8">
             <img src="/angular.svg" width={"75px"} height={"75px"} />
             <span className="text-base font-bold text-gray-700">Angular</span>
             <div className="text-ellipsis text-xs font-normal font-serif text-gray-700">
@@ -17,7 +17,7 @@ function Skills() {
               applications with robust features and seamless data binding.
             </div>
           </div>
-          <div className="flex flex-col items-center justify-center max-lg:m-4 text-center gap-2 drop-shadow-2xl shadow-indigo-50 bg-opacity-100 bg-white hover:shadow-2xl hover:shadow-indigo-300 rounded hover:rounded-tl-3xl hover:rounded-br-3xl max-w-64 max-h-64 m-8 p-8">
+          <div className="flex flex-col items-center justify-between max-lg:m-4 text-center gap-2 drop-shadow-2xl shadow-indigo-50 bg-opacity-100 bg-white hover:shadow-2xl hover:shadow-indigo-300 rounded hover:rounded-tl-3xl hover:rounded-br-3xl max-w-64 max-h-64 m-8 p-8">
             <img src="/react.svg" width={"75px"} height={"75px"} />
             <span className="text-base font-bold text-gray-700">React</span>
             <div className="text-ellipsis text-xs font-normal font-serif text-gray-700">
@@ -26,7 +26,7 @@ function Skills() {
               enabling fast and scalable web applications.
             </div>
           </div>
-          <div className="flex flex-col items-center justify-center text-center max-lg:m-4 gap-2 drop-shadow-2xl shadow-indigo-50 bg-opacity-100 bg-white hover:shadow-2xl hover:shadow-indigo-300 rounded hover:rounded-tl-3xl hover:rounded-br-3xl max-w-64 max-h-64 m-8 p-8">
+          <div className="flex flex-col items-center justify-between text-center max-lg:m-4 gap-2 drop-shadow-2xl shadow-indigo-50 bg-opacity-100 bg-white hover:shadow-2xl hover:shadow-indigo-300 rounded hover:rounded-tl-3xl hover:rounded-br-3xl max-w-64 max-h-64 m-8 p-8">
             <img src="/ionic.svg" width={"75px"} height={"75px"} />
             <span className="text-base font-bold text-gray-700">Ionic</span>
             <div className="text-ellipsis text-xs font-normal font-serif text-gray-700">
@@ -35,7 +35,7 @@ function Skills() {
               components and native-like performance.
             </div>
           </div>
-          <div className="flex flex-col items-center justify-center text-center max-lg:m-4 gap-2 drop-shadow-2xl shadow-indigo-50 bg-opacity-100 bg-white hover:shadow-2xl hover:shadow-indigo-300 rounded hover:rounded-tl-3xl hover:rounded-br-3xl max-w-64 max-h-64 m-8 p-8">
+          <div className="flex flex-col items-center justify-between text-center max-lg:m-4 gap-2 drop-shadow-2xl shadow-indigo-50 bg-opacity-100 bg-white hover:shadow-2xl hover:shadow-indigo-300 rounded hover:rounded-tl-3xl hover:rounded-br-3xl max-w-64 max-h-64 m-8 p-8">
             <img src="/redux.svg" width={"75px"} height={"75px"} />
             <span className="text-base font-bold text-gray-700">Redux</span>
             <div className="text-ellipsis text-xs font-normal font-serif text-gray-700">
@@ -44,7 +44,7 @@ function Skills() {
               applications through a single immutable state tree.
             </div>
           </div>
-          <div className="flex flex-col items-center justify-center text-center max-lg:m-4 gap-2 drop-shadow-2xl shadow-indigo-50 bg-opacity-100 bg-white hover:shadow-2xl hover:shadow-indigo-300 rounded hover:rounded-tl-3xl hover:rounded-br-3xl max-w-64 max-h-64 m-8 p-8">
+          <div className="flex flex-col items-center justify-between text-center max-lg:m-4 gap-2 drop-shadow-2xl shadow-indigo-50 bg-opacity-100 bg-white hover:shadow-2xl hover:shadow-indigo-300 rounded hover:rounded-tl-3xl hover:rounded-br-3xl max-w-64 max-h-64 m-8 p-8">
             <img src="/typescript.svg" width={"75px"} height={"75px"} />
             <span className="text-base font-bold text-gray-700">
               TypeScript
@@ -55,7 +55,7 @@ function Skills() {
               features for large-scale application development.
             </div>
           </div>
-          <div className="flex flex-col items-center justify-center text-center max-lg:m-4 gap-2 drop-shadow-2xl shadow-indigo-50 bg-opacity-100 bg-white hover:shadow-2xl hover:shadow-indigo-300 rounded hover:rounded-tl-3xl hover:rounded-br-3xl max-w-64 max-h-64 m-8 p-8">
+          <div className="flex flex-col items-center justify-between text-center max-lg:m-4 gap-2 drop-shadow-2xl shadow-indigo-50 bg-opacity-100 bg-white hover:shadow-2xl hover:shadow-indigo-300 rounded hover:rounded-tl-3xl hover:rounded-br-3xl max-w-64 max-h-64 m-8 p-8">
             <img src="/javascript.svg" width={"75px"} height={"75px"} />
             <span className="text-base font-bold text-gray-700">
               JavaScript
@@ -66,7 +66,7 @@ function Skills() {
               application capabilities.
             </div>
           </div>
-          <div className="flex flex-col items-center justify-center text-center max-lg:m-4 gap-2 drop-shadow-2xl shadow-indigo-50 bg-opacity-100 bg-white hover:shadow-2xl hover:shadow-indigo-300 rounded hover:rounded-tl-3xl hover:rounded-br-3xl max-w-64 max-h-64 m-8 p-8">
+          <div className="flex flex-col items-center justify-between text-center max-lg:m-4 gap-2 drop-shadow-2xl shadow-indigo-50 bg-opacity-100 bg-white hover:shadow-2xl hover:shadow-indigo-300 rounded hover:rounded-tl-3xl hover:rounded-br-3xl max-w-64 max-h-64 m-8 p-8">
             <img src="/html.svg" width={"75px"} height={"75px"} />
             <span className="text-base font-bold text-gray-700">HTML</span>
             <div className="text-ellipsis text-xs font-normal font-serif text-gray-700">
@@ -75,7 +75,7 @@ function Skills() {
               using a variety of elements and attributes.
             </div>
           </div>
-          <div className="flex flex-col items-center justify-center text-center max-lg:m-4 gap-2 drop-shadow-2xl shadow-indigo-50 bg-opacity-100 bg-white hover:shadow-2xl hover:shadow-indigo-300 rounded hover:rounded-tl-3xl hover:rounded-br-3xl max-w-64 max-h-64 m-8 p-8">
+          <div className="flex flex-col items-center justify-between text-center max-lg:m-4 gap-2 drop-shadow-2xl shadow-indigo-50 bg-opacity-100 bg-white hover:shadow-2xl hover:shadow-indigo-300 rounded hover:rounded-tl-3xl hover:rounded-br-3xl max-w-64 max-h-64 m-8 p-8">
             <img src="/tailwindcss.svg" width={"75px"} height={"75px"} />
             <span className="text-base font-bold text-gray-700">
               Tailwind CSS
@@ -86,7 +86,7 @@ function Skills() {
               customization without writing custom CSS.
             </div>
           </div>
-          <div className="flex flex-col items-center justify-center text-center max-lg:m-4 gap-2 drop-shadow-2xl shadow-indigo-50 bg-opacity-100 bg-white hover:shadow-2xl hover:shadow-indigo-300 rounded hover:rounded-tl-3xl hover:rounded-br-3xl max-w-64 max-h-64 m-8 p-8">
+          <div className="flex flex-col items-center justify-between text-center max-lg:m-4 gap-2 drop-shadow-2xl shadow-indigo-50 bg-opacity-100 bg-white hover:shadow-2xl hover:shadow-indigo-300 rounded hover:rounded-tl-3xl hover:rounded-br-3xl max-w-64 max-h-64 m-8 p-8">
             <img src="/bootstrap.svg" width={"75px"} height={"75px"} />
             <span className="text-base font-bold text-gray-700">Bootstrap</span>
             <div className="text-ellipsis text-xs font-normal font-serif text-gray-700">

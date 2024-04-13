@@ -50,7 +50,7 @@ function Home() {
             </Link>
           </div>
         </div>
-        <div className="h-full w-3/5 hidden flex-col gap-1 items-center justify-center max-lg:flex">
+        <div className="h-full w-3/5 max-lg:-top-5 max-lg:absolute hidden flex-col gap-1 items-center justify-center max-lg:flex">
           <div className="text-white text-base flex gap-2 items-center">
             <span>Hello, my name is </span>
             <span className="bg-gray-700 p-0 rounded px-1 font-semibold">

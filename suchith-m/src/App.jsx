@@ -1,5 +1,6 @@
 import "./App.css";
 import AboutMe from "./components/AboutMe";
+import Contact from "./components/Contact";
 import Experience from "./components/Experience";
 import Home from "./components/Home";
 import Sidebar from "./components/Sidebar";
@@ -39,6 +40,9 @@ function App() {
         </div>
         <div className="relative">
           <Skills />
+        </div>
+        <div className="relative">
+          <Contact />
         </div>
       </div>
     </div>
