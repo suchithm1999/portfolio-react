@@ -24,7 +24,7 @@ function AboutMe() {
         <div className="w-1/2 h-full m-auto">
           <img src="/AboutMe_profile.svg" />
         </div>
-        <div className="w-1/2 m-auto h-full flex flex-col gap-4 max-lg:w-full max-lg:gap-1 max-lg:px-4 max-lg:text-center">
+        <div className="w-1/2 m-auto h-full flex flex-col gap-4 max-sm:w-full max-lg:gap-1 max-lg:px-4 max-lg:text-center">
           <span className="text-4xl font-bold max-lg:text-base max-lg:mt-5">
             About Me
           </span>
@@ -35,7 +35,7 @@ function AboutMe() {
             management using Redux, Redux Toolkit, and React Hooks.`}</span>
           <div className="border border-b-gray-300 p-2 border-x-0 border-t-0"></div>
           <div className="flex justify-between">
-            <div className="text-sm flex flex-col m-3 gap-4 max-lg:text-xs max-lg:gap-2">
+            <div className="text-sm flex flex-col m-3 max-lg:mx-0 gap-4 max-lg:text-xs max-lg:gap-2">
               <div className="flex gap-2">
                 <span className="font-semibold">Name:</span>
                 <span className="text-gray-500 font-medium">Suchith M</span>
@@ -45,7 +45,7 @@ function AboutMe() {
                 <span className="text-gray-500 font-medium">24</span>
               </div>
             </div>
-            <div className="text-sm flex flex-col m-3 gap-4 max-lg:text-xs max-lg:gap-2">
+            <div className="text-sm flex flex-col m-3 max-lg:mx-0 gap-4 max-lg:text-xs max-lg:gap-2">
               <div className="flex gap-2">
                 <span className="font-semibold">Email:</span>
                 <span
