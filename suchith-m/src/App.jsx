@@ -3,6 +3,7 @@ import AboutMe from "./components/AboutMe";
 import Experience from "./components/Experience";
 import Home from "./components/Home";
 import Sidebar from "./components/Sidebar";
+import Skills from "./components/Skills";
 
 function App() {
   return (
@@ -36,7 +37,9 @@ function App() {
         <div className="relative">
           <Experience />
         </div>
-        <div className="w-full h-screen bg-gray-100 max-lg:hidden"></div>
+        <div className="relative">
+          <Skills />
+        </div>
       </div>
     </div>
   );

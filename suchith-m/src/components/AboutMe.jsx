@@ -29,7 +29,7 @@ function AboutMe() {
             About Me
           </span>
           <span className="text-xl font-medium text-gray-500 max-lg:text-sm">{`I'm a Software Development Engineer`}</span>
-          <span className="text-sm font-normal text-gray-500 leading-6 max-lg:text-xs max-lg:text-justify">{`Software Development Engineer with a strong background in web development, specializing in Angular, React,
+          <span className="text-sm font-normal text-gray-500 max-lg:text-gray-700 leading-6 max-lg:text-xs max-lg:text-justify">{`Software Development Engineer with a strong background in web development, specializing in Angular, React,
             and TypeScript. Proven expertise in Ionic native development for mobile applications on both Android and iOS
             platforms. Solid foundation in front-end technologies, including HTML, CSS, and JavaScript. Skilled in state
             management using Redux, Redux Toolkit, and React Hooks.`}</span>
