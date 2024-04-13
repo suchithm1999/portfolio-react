@@ -9,6 +9,12 @@ function AboutMe() {
     document.body.removeChild(a);
   };
 
+  const openGmail = () => {
+    const emailAddress = "suchithm1999@gmail.com";
+    const mailtoLink = `mailto:${emailAddress}`;
+    window.open(mailtoLink, "_blank");
+  };
+
   return (
     <>
       <div
@@ -40,7 +46,10 @@ function AboutMe() {
             <div className="text-sm flex flex-col m-3 gap-4">
               <div className="flex gap-2">
                 <span className="font-semibold">Email:</span>
-                <span className="text-gray-500 font-medium">
+                <span
+                  onClick={openGmail}
+                  className="text-blue-500 cursor-pointer underline font-medium"
+                >
                   suchithm1999@gmail.com
                 </span>
               </div>
