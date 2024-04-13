@@ -119,10 +119,18 @@ function Sidebar() {
           <IoMdDownload className="text-xl text-gray-600 font-extralight" />
           <span>Download Resume</span>
         </div>
-        <div className="flex p-4 pl-5 px-8 border-t-0 items-center gap-4 text-sm border text-gray-900 border-x-0 hover:text-blue-700 hover:bg-gray-100 cursor-pointer font-medium">
+        <Link
+          to="contacts"
+          spy={true}
+          smooth={true}
+          offset={-100}
+          duration={500}
+          onSetActive={handleSetActive}
+          className={`${activeLink === "contacts" ? "active" : ""} flex p-4 pl-5 px-8 border-t-0 items-center gap-4 text-sm border text-gray-900 border-x-0 hover:text-blue-700 hover:bg-gray-100 cursor-pointer font-medium`}
+        >
           <BiSolidContact className="text-xl text-gray-600 font-extralight" />
           <span>Contact</span>
-        </div>
+        </Link>
         <div className="flex items-center justify-center flex-col gap-6 pt-10">
           <div className="flex gap-3 text-xl cursor-pointer">
             <AiFillLinkedin onClick={openLinkedIn} />
