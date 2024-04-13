@@ -80,7 +80,7 @@ function Sidebar() {
           to="about"
           spy={true}
           smooth={true}
-          offset={-150}
+          offset={-100}
           duration={500}
           onSetActive={handleSetActive}
           className={`${activeLink === "about" ? "active" : ""} flex p-4 pl-5 px-8 border-t-0 items-center gap-4 text-sm border text-gray-900 border-x-0 hover:text-blue-700 hover:bg-gray-100 cursor-pointer font-medium`}
@@ -88,10 +88,18 @@ function Sidebar() {
           <PiUserCircleDuotone className="text-xl text-gray-600 font-extralight" />
           <span>About</span>
         </Link>
-        <div className="flex p-4 pl-5 px-8 border-t-0 items-center gap-4 text-sm border text-gray-900 border-x-0 hover:text-blue-700 hover:bg-gray-100 cursor-pointer font-medium">
+        <Link
+          to="work-experience"
+          spy={true}
+          smooth={true}
+          offset={-50}
+          duration={500}
+          onSetActive={handleSetActive}
+          className={`${activeLink === "work-experience" ? "active" : ""} flex p-4 pl-5 px-8 border-t-0 items-center gap-4 text-sm border text-gray-900 border-x-0 hover:text-blue-700 hover:bg-gray-100 cursor-pointer font-medium`}
+        >
           <BsSpeedometer2 className="text-xl text-gray-600 font-extralight" />
           <span>Work Experience</span>
-        </div>
+        </Link>
         <div className="flex p-4 pl-5 px-8 border-t-0 items-center gap-4 text-sm border text-gray-900 border-x-0 hover:text-blue-700 hover:bg-gray-100 cursor-pointer font-medium">
           <TbSettingsBolt className="text-xl text-gray-600 font-extralight" />
           <span>Skills</span>
