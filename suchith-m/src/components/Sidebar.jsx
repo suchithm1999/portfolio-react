@@ -100,10 +100,18 @@ function Sidebar() {
           <BsSpeedometer2 className="text-xl text-gray-600 font-extralight" />
           <span>Work Experience</span>
         </Link>
-        <div className="flex p-4 pl-5 px-8 border-t-0 items-center gap-4 text-sm border text-gray-900 border-x-0 hover:text-blue-700 hover:bg-gray-100 cursor-pointer font-medium">
+        <Link
+          to="skills"
+          spy={true}
+          smooth={true}
+          offset={-75}
+          duration={500}
+          onSetActive={handleSetActive}
+          className={`${activeLink === "skills" ? "active" : ""} flex p-4 pl-5 px-8 border-t-0 items-center gap-4 text-sm border text-gray-900 border-x-0 hover:text-blue-700 hover:bg-gray-100 cursor-pointer font-medium`}
+        >
           <TbSettingsBolt className="text-xl text-gray-600 font-extralight" />
           <span>Skills</span>
-        </div>
+        </Link>
         <div
           onClick={downloadResume}
           className="flex p-4 pl-5 px-8 border-t-0 items-center gap-4 text-sm border text-gray-900 border-x-0 hover:text-blue-700 hover:bg-gray-100 cursor-pointer font-medium"

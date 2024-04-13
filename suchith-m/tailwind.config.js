@@ -29,6 +29,7 @@ export default {
         "map-image": "url('../public/map.png')",
         "suchith-image": "url('../public/suchith_m.jpeg')",
         "office-background": "url('../public/office-image-bg.webp')",
+        "mass-icon": "url('../public/mass-icons.png')",
       },
     },
   },
