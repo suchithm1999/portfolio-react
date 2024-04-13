@@ -2,6 +2,7 @@ import "./App.css";
 import AboutMe from "./components/AboutMe";
 import Contact from "./components/Contact";
 import Experience from "./components/Experience";
+import Footer from "./components/Footer";
 import Home from "./components/Home";
 import Sidebar from "./components/Sidebar";
 import Skills from "./components/Skills";
@@ -43,6 +44,9 @@ function App() {
         </div>
         <div className="relative">
           <Contact />
+        </div>
+        <div className="relative">
+          <Footer />
         </div>
       </div>
     </div>
