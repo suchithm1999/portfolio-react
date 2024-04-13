@@ -1,5 +1,6 @@
 import "./App.css";
 import AboutMe from "./components/AboutMe";
+import Experience from "./components/Experience";
 import Home from "./components/Home";
 import Sidebar from "./components/Sidebar";
 
@@ -11,9 +12,9 @@ function App() {
       </div>
       <div
         style={{ left: "20%" }}
-        className="w-4/5 max-lg:w-full h-full relative"
+        className="w-4/5 max-lg:w-full h-full relative max-lg:!left-0"
       >
-        <div className="h-screen max-sm:h-56 bg-office-background bg-no-repeat bg-cover relative">
+        <div className="h-screen max-lg:h-56 bg-office-background bg-no-repeat bg-cover relative">
           <div
             className="h-full inset-0 bg-black opacity-50 relative"
             style={{ zIndex: 1 }}
@@ -32,7 +33,10 @@ function App() {
         <div className="relative">
           <AboutMe />
         </div>
-        <div className="h-screen bg-gray-100"></div>
+        <div className="relative">
+          <Experience />
+        </div>
+        <div className="w-full h-screen bg-gray-100 max-lg:hidden"></div>
       </div>
     </div>
   );
