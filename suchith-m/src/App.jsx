@@ -6,6 +6,7 @@ import Footer from "./components/Footer";
 import Home from "./components/Home";
 import Sidebar from "./components/Sidebar";
 import Skills from "./components/Skills";
+import FadeInSection from "./components/FadeInSection";
 
 function App() {
   return (
@@ -33,18 +34,26 @@ function App() {
             <Home />
           </div>
         </div>
-        <div className="relative">
-          <AboutMe />
-        </div>
-        <div className="relative">
-          <Experience />
-        </div>
-        <div className="relative">
-          <Skills />
-        </div>
-        <div className="relative">
-          <Contact />
-        </div>
+        <FadeInSection>
+          <div className="relative">
+            <AboutMe />
+          </div>
+        </FadeInSection>
+        <FadeInSection>
+          <div className="relative">
+            <Experience />
+          </div>
+        </FadeInSection>
+        <FadeInSection>
+          <div className="relative">
+            <Skills />
+          </div>
+        </FadeInSection>
+        <FadeInSection>
+          <div className="relative">
+            <Contact />
+          </div>
+        </FadeInSection>
         <div className="relative">
           <Footer />
         </div>
