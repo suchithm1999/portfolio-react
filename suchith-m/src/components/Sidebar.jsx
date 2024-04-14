@@ -123,7 +123,7 @@ function Sidebar() {
           to="contacts"
           spy={true}
           smooth={true}
-          offset={-100}
+          offset={-50}
           duration={500}
           onSetActive={handleSetActive}
           className={`${activeLink === "contacts" ? "active" : ""} flex p-4 pl-5 px-8 border-t-0 items-center gap-4 text-sm border text-gray-900 border-x-0 hover:text-blue-700 hover:bg-gray-100 cursor-pointer font-medium`}

@@ -13,6 +13,14 @@ export default {
             width: "100%",
           },
         },
+        fadeIn: {
+          "0%": {
+            opacity: "0",
+          },
+          "100%": {
+            opacity: "1",
+          },
+        },
         blink: {
           "50%": {
             borderColor: "transparent",
@@ -24,6 +32,7 @@ export default {
       },
       animation: {
         typing: "typing 2s steps(20) infinite alternate, blink .7s infinite",
+        fade: "fadeIn 1s",
       },
       backgroundImage: {
         "map-image": "url('../public/map.png')",
