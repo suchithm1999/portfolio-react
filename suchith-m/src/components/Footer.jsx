@@ -26,10 +26,42 @@ function Footer() {
       <div className="w-full bg-gray-50 h-32">
         <div className="flex items-center justify-center flex-col gap-6 pt-10">
           <div className="flex gap-3 text-xl cursor-pointer">
-            <AiFillLinkedin onClick={openLinkedIn} />
-            <AiFillGithub onClick={openGithub} />
-            <BsInstagram onClick={openInstagram} />
-            <BiLogoGmail onClick={openGmail} />
+            <AiFillLinkedin
+              tabIndex={0}
+              onClick={openLinkedIn}
+              onKeyDown={(event) => {
+                if (event.key === "Enter" || event.keyCode === 13) {
+                  openLinkedIn();
+                }
+              }}
+            />
+            <AiFillGithub
+              tabIndex={0}
+              onClick={openGithub}
+              onKeyDown={(event) => {
+                if (event.key === "Enter" || event.keyCode === 13) {
+                  openGithub();
+                }
+              }}
+            />
+            <BsInstagram
+              tabIndex={0}
+              onClick={openInstagram}
+              onKeyDown={(event) => {
+                if (event.key === "Enter" || event.keyCode === 13) {
+                  openInstagram();
+                }
+              }}
+            />
+            <BiLogoGmail
+              tabIndex={0}
+              onClick={openGmail}
+              onKeyDown={(event) => {
+                if (event.key === "Enter" || event.keyCode === 13) {
+                  openGmail();
+                }
+              }}
+            />
           </div>
           <span className="text-xs font-serif text-gray-600">
             Copyright © 2024 Suchith M

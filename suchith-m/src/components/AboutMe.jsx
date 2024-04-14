@@ -48,12 +48,13 @@ function AboutMe() {
             <div className="text-sm flex flex-col m-3 max-lg:mx-0 gap-4 max-lg:text-xs max-lg:gap-2">
               <div className="flex gap-2">
                 <span className="font-semibold">Email:</span>
-                <span
+                <a
                   onClick={openGmail}
+                  href="mailto:suchithm1999@gmail.com"
                   className="text-blue-500 cursor-pointer underline font-medium"
                 >
                   suchithm1999@gmail.com
-                </span>
+                </a>
               </div>
               <div className="flex gap-2">
                 <span className="font-semibold">From:</span>

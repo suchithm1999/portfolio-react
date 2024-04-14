@@ -9,7 +9,7 @@ import { AiFillGithub } from "react-icons/ai";
 import { BsInstagram } from "react-icons/bs";
 import { BiLogoGmail } from "react-icons/bi";
 import "/src/App.css";
-import { Link } from "react-scroll";
+import { Button } from "react-scroll";
 import { useState } from "react";
 
 function Sidebar() {
@@ -64,79 +64,111 @@ function Sidebar() {
             </h1>
           </div>
         </div>
-        <Link
+        <Button
           to="home"
           spy={true}
           smooth={true}
           offset={-100}
           duration={500}
           onSetActive={handleSetActive}
-          className={`${activeLink === "home" ? "active" : ""} flex p-4 pl-5 px-8 items-center gap-4 text-sm border text-gray-900 border-x-0 hover:text-blue-700 hover:bg-gray-100 cursor-pointer font-medium`}
+          className={`${activeLink === "home" ? "active" : ""} w-full flex p-4 pl-5 px-8 items-center gap-4 text-sm border text-gray-900 border-x-0 hover:text-blue-700 hover:bg-gray-100 cursor-pointer font-medium`}
         >
           <BiHome className="text-xl text-gray-600 font-extralight" />
           <span>Home</span>
-        </Link>
-        <Link
+        </Button>
+        <Button
           to="about"
           spy={true}
           smooth={true}
           offset={-100}
           duration={500}
           onSetActive={handleSetActive}
-          className={`${activeLink === "about" ? "active" : ""} flex p-4 pl-5 px-8 border-t-0 items-center gap-4 text-sm border text-gray-900 border-x-0 hover:text-blue-700 hover:bg-gray-100 cursor-pointer font-medium`}
+          className={`${activeLink === "about" ? "active" : ""} w-full flex p-4 pl-5 px-8 border-t-0 items-center gap-4 text-sm border text-gray-900 border-x-0 hover:text-blue-700 hover:bg-gray-100 cursor-pointer font-medium`}
         >
           <PiUserCircleDuotone className="text-xl text-gray-600 font-extralight" />
           <span>About</span>
-        </Link>
-        <Link
+        </Button>
+        <Button
           to="work-experience"
           spy={true}
           smooth={true}
           offset={-50}
           duration={500}
           onSetActive={handleSetActive}
-          className={`${activeLink === "work-experience" ? "active" : ""} flex p-4 pl-5 px-8 border-t-0 items-center gap-4 text-sm border text-gray-900 border-x-0 hover:text-blue-700 hover:bg-gray-100 cursor-pointer font-medium`}
+          className={`${activeLink === "work-experience" ? "active" : ""} w-full flex p-4 pl-5 px-8 border-t-0 items-center gap-4 text-sm border text-gray-900 border-x-0 hover:text-blue-700 hover:bg-gray-100 cursor-pointer font-medium`}
         >
           <BsSpeedometer2 className="text-xl text-gray-600 font-extralight" />
           <span>Work Experience</span>
-        </Link>
-        <Link
+        </Button>
+        <Button
           to="skills"
           spy={true}
           smooth={true}
           offset={-75}
           duration={500}
           onSetActive={handleSetActive}
-          className={`${activeLink === "skills" ? "active" : ""} flex p-4 pl-5 px-8 border-t-0 items-center gap-4 text-sm border text-gray-900 border-x-0 hover:text-blue-700 hover:bg-gray-100 cursor-pointer font-medium`}
+          className={`${activeLink === "skills" ? "active" : ""} w-full flex p-4 pl-5 px-8 border-t-0 items-center gap-4 text-sm border text-gray-900 border-x-0 hover:text-blue-700 hover:bg-gray-100 cursor-pointer font-medium`}
         >
           <TbSettingsBolt className="text-xl text-gray-600 font-extralight" />
           <span>Skills</span>
-        </Link>
-        <div
+        </Button>
+        <Button
           onClick={downloadResume}
-          className="flex p-4 pl-5 px-8 border-t-0 items-center gap-4 text-sm border text-gray-900 border-x-0 hover:text-blue-700 hover:bg-gray-100 cursor-pointer font-medium"
+          className="flex p-4 pl-5 px-8 w-full border-t-0 items-center gap-4 text-sm border text-gray-900 border-x-0 hover:text-blue-700 hover:bg-gray-100 cursor-pointer font-medium"
         >
           <IoMdDownload className="text-xl text-gray-600 font-extralight" />
           <span>Download Resume</span>
-        </div>
-        <Link
+        </Button>
+        <Button
           to="contacts"
           spy={true}
           smooth={true}
           offset={-50}
           duration={500}
           onSetActive={handleSetActive}
-          className={`${activeLink === "contacts" ? "active" : ""} flex p-4 pl-5 px-8 border-t-0 items-center gap-4 text-sm border text-gray-900 border-x-0 hover:text-blue-700 hover:bg-gray-100 cursor-pointer font-medium`}
+          className={`${activeLink === "contacts" ? "active" : ""} w-full flex p-4 pl-5 px-8 border-t-0 items-center gap-4 text-sm border text-gray-900 border-x-0 hover:text-blue-700 hover:bg-gray-100 cursor-pointer font-medium`}
         >
           <BiSolidContact className="text-xl text-gray-600 font-extralight" />
           <span>Contact</span>
-        </Link>
+        </Button>
         <div className="flex items-center justify-center flex-col gap-6 pt-10">
           <div className="flex gap-3 text-xl cursor-pointer">
-            <AiFillLinkedin onClick={openLinkedIn} />
-            <AiFillGithub onClick={openGithub} />
-            <BsInstagram onClick={openInstagram} />
-            <BiLogoGmail onClick={openGmail} />
+            <AiFillLinkedin
+              tabIndex={0}
+              onClick={openLinkedIn}
+              onKeyDown={(event) => {
+                if (event.key === "Enter" || event.keyCode === 13) {
+                  openLinkedIn();
+                }
+              }}
+            />
+            <AiFillGithub
+              tabIndex={0}
+              onClick={openGithub}
+              onKeyDown={(event) => {
+                if (event.key === "Enter" || event.keyCode === 13) {
+                  openGithub();
+                }
+              }}
+            />
+            <BsInstagram
+              tabIndex={0}
+              onClick={openInstagram}
+              onKeyDown={(event) => {
+                if (event.key === "Enter" || event.keyCode === 13) {
+                  openInstagram();
+                }
+              }}
+            />
+            <BiLogoGmail
+              tabIndex={0}
+              onClick={openGmail}
+              onKeyDown={(event) => {
+                if (event.key === "Enter" || event.keyCode === 13) {
+                  openGmail();
+                }
+              }}
+            />
           </div>
           <span className="text-xs font-serif text-gray-600">
             Copyright © 2024 Suchith M

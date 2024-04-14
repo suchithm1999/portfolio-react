@@ -1,4 +1,4 @@
-import { Link } from "react-scroll";
+import { Button } from "react-scroll";
 import "/src/App.css";
 
 function Home() {
@@ -28,7 +28,7 @@ function Home() {
             {`Experienced Software Development Engineer proficient in web development, specializing in Angular, React, and TypeScript. Expertise extends to mobile application development with Ionic, alongside a strong foundation in front-end technologies and state management techniques.`}
           </span>
           <div className="pt-5 flex gap-5">
-            <Link
+            <Button
               to="about"
               spy={true}
               smooth={true}
@@ -37,8 +37,8 @@ function Home() {
               className="bg-white p-2.5 px-5 active:bg-gray-200 text-black rounded-full font-medium cursor-pointer"
             >
               About Me
-            </Link>
-            <Link
+            </Button>
+            <Button
               to="work-experience"
               spy={true}
               smooth={true}
@@ -47,7 +47,7 @@ function Home() {
               className="bg-blue-700 p-2.5 px-5 active:bg-blue-500 text-white rounded-full font-medium cursor-pointer"
             >
               Work Experience
-            </Link>
+            </Button>
           </div>
         </div>
         <div className="h-full w-3/5 max-lg:-top-5 max-lg:absolute hidden flex-col gap-1 items-center justify-center max-lg:flex">
