@@ -23,7 +23,7 @@ This project is a personal portfolio website built using React. It showcases abo
 2. **Navigate to the project directory:**
 
    ```bash
-   cd suchith-m
+   cd portfolio-react/suchith-m/
    ```
 
 3. **Install dependencies:**
