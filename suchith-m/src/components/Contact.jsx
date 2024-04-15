@@ -39,7 +39,7 @@ function Contact() {
             className="w-full max-lg:w-9/12 cursor-pointer flex flex-col items-center justify-between text-center gap-2 drop-shadow-2xl shadow-indigo-50 bg-opacity-100 bg-white hover:shadow-2xl hover:shadow-indigo-300 rounded hover:rounded-tl-3xl hover:rounded-br-3xl max-h-64 m-8 max-lg:m-4 p-8"
           >
             <BiLogoWhatsapp className="text-3xl" />
-            <span className="text-xl font-bold text-gray-700">Whatssapp</span>
+            <span className="text-xl font-bold text-gray-700">WhatsApp</span>
             <div className="text-ellipsis text-base font-normal font-serif text-gray-700">
               +91-9164389511
             </div>
