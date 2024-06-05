@@ -12,7 +12,7 @@ function Experience() {
           <div className="flex flex-col gap-2 items-center justify-between mt-12 max-lg:mt-4">
             <div className="flex justify-between w-full font-semibold text-xl max-lg:text-sm max-lg:flex-col">
               <span>SURYA DIGITECH PRIVATE LIMITED</span>
-              <span>July 2022 - Present</span>
+              <span>July 2022 - April 2024</span>
             </div>
             <span className="w-full text-blue-700 font-semibold text-base max-lg:text-xs">
               Software Development Engineer 1
