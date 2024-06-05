@@ -19,7 +19,7 @@ function AboutMe() {
     <>
       <div
         id="about"
-        className="p-10 h-full m-auto mb-0 w-4/5 flex gap-16 items-center justify-center my-20 max-lg:m-0 max-lg:gap-0.5 max-lg:w-full max-lg:p-0 max-lg:flex-col max-lg:mt-5"
+        className="p-10 h-full m-auto mb-0 w-4/5 flex gap-12 items-center justify-center my-20 max-lg:m-0 max-lg:gap-0.5 max-lg:w-full max-lg:p-0 max-lg:flex-col max-lg:mt-5"
       >
         <div className="w-1/2 h-full m-auto">
           <img src="/AboutMe_profile.svg" />
@@ -29,10 +29,10 @@ function AboutMe() {
             About Me
           </span>
           <span className="text-xl font-medium text-gray-500 max-lg:text-sm">{`I'm a Software Development Engineer`}</span>
-          <span className="text-sm font-normal text-gray-500 max-lg:text-gray-700 leading-6 max-lg:text-xs max-lg:text-justify">{`Software Development Engineer with a strong background in web development, specializing in Angular, React,
-            and TypeScript. Proven expertise in Ionic native development for mobile applications on both Android and iOS
-            platforms. Solid foundation in front-end technologies, including HTML, CSS, and JavaScript. Skilled in state
-            management using Redux, Redux Toolkit, and React Hooks.`}</span>
+          <span className="text-sm font-normal text-gray-500 max-lg:text-gray-700 leading-6 max-lg:text-xs max-lg:text-justify">{`Software Development Engineer with 2 years experience in web development, specializing in Angular, React,
+          and TypeScript. Proven expertise in Ionic native development for mobile applications on both Android and iOS
+          platforms. Solid foundation in front-end technologies, including HTML, CSS, and JavaScript. Skilled in state
+          management using Redux, Redux Toolkit, and React Hooks.`}</span>
           <div className="border border-b-gray-300 p-2 border-x-0 border-t-0"></div>
           <div className="flex justify-between">
             <div className="text-sm flex flex-col m-3 max-lg:mx-0 gap-4 max-lg:text-xs max-lg:gap-2">
