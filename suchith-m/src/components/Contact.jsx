@@ -19,7 +19,7 @@ function Contact() {
         id="contacts"
         className="h-full w-full flex flex-col items-center bg-map-image bg-cover bg-no-repeat px-16 max-lg:p-0 pt-0 m-8 mt-5 mb-0 mx-auto"
       >
-        <span className="text-4xl font-bold text-center max-lg:text-xl">
+        <span className="text-4xl font-bold text-center max-lg:text-2xl max-sm:text-xl">
           Get in Touch
         </span>
         <Form />

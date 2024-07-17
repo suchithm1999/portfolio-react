@@ -5,7 +5,7 @@ function Experience() {
         id="work-experience"
         className="h-full w-full flex flex-col bg-map-image bg-no-repeat bg-cover items-center p-14 pt-12 m-8 mx-auto max-lg:p-0 "
       >
-        <span className="text-4xl font-bold max-lg:text-xl">
+        <span className="text-4xl max-lg:text-2xl font-bold max-sm:text-xl">
           Work Experience
         </span>
         <div className="w-4/5">
@@ -20,56 +20,31 @@ function Experience() {
             <div className="w-full">
               <ul
                 style={{ listStyleType: "disc" }}
-                className="text-lg font-normal text-gray-950 flex flex-col gap-2 mt-0 max-lg:text-sm"
+                className="text-lg font-normal text-gray-950 flex flex-col gap-2 mt-0 max-lg:text-sm max-sm:text-xs"
               >
                 <li>
-                  {`Developed a web application using Angular with TypeScript, concurrently creating Android and iOS
-                  applications with Ionic for native development.`}
+                  {`Designed and developed user interfaces using Angular, ReactJS, HTML, CSS, TypeScript, and JavaScript.`}
                 </li>
                 <li>
-                  {`Managed front-end deployment and facilitated upload to Play
-                  Store and App Store Connect.`}
+                  {`Translated Figma designs into responsive user interfaces (UI) for applications.`}
                 </li>
                 <li>
-                  {`Collaborated in an Agile-Scrum
-                  environment, gathering requirements and assisting in sprint
-                  planning`}
+                  {`Integrated front-end components with REST APIs to fetch and display data.`}
                 </li>
                 <li>
-                  {`Translated Figma designs into responsive user interfaces
-                  (UI) for the application.`}
+                  {`Collaborated with back-end developers to create a seamless user experience.`}
                 </li>
                 <li>
-                  {`Integrated server-side components for
-                  enhanced functionality.`}
+                  {`Optimized applications for performance and scalability.`}
+                </li>
+                <li>
+                  {`Wrote clean, maintainable, and well-documented code.`}
+                </li>
+                <li>{`Tested and debugged applications to ensure quality.`}</li>
+                <li>
+                  {`Managed front-end deployment and facilitated uploads to the Play Store and App Store Connect.`}
                 </li>
               </ul>
-            </div>
-            <span className="text-lg w-full font-bold text-gray-700 mt-2 max-lg:text-sm">
-              Additional Projects:
-            </span>
-            <div className="w-full">
-              <div>
-                <ul
-                  style={{ listStyleType: "disc" }}
-                  className="text-lg font-normal text-gray-950 flex flex-col gap-2 mt-0 max-lg:text-sm"
-                >
-                  <li>
-                    <span className="font-bold">Back Office Tool : </span>
-                    Designed and implemented a comprehensive internal tool for
-                    user profile maintenance, focusing on React, Redux,
-                    JavaScript, TypeScript, and Tailwind CSS.
-                  </li>
-                  <li>
-                    <span className="font-bold">
-                      Employee Time Tracking Tool :{" "}
-                    </span>
-                    Led development of an internal tool to monitor employee work
-                    hours, emphasizing Angular, Ionic, Capacitor, and Tailwind
-                    CSS.
-                  </li>
-                </ul>
-              </div>
             </div>
           </div>
           <div className="border border-b-gray-300 p-2 my-4 border-x-0 border-t-0 max-lg:p-0"></div>
@@ -84,7 +59,7 @@ function Experience() {
             <div className="w-full">
               <ul
                 style={{ listStyleType: "disc" }}
-                className="text-lg font-normal text-gray-950 flex flex-col gap-2 mt-0 max-lg:text-sm"
+                className="text-lg font-normal text-gray-950 flex flex-col gap-2 mt-0 max-lg:text-sm max-sm:text-xs"
               >
                 <li>
                   {`Developed a web application using Angular and Typescript.`}

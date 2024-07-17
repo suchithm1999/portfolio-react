@@ -4,6 +4,7 @@ import Contact from "./components/Contact";
 import Experience from "./components/Experience";
 import Footer from "./components/Footer";
 import Home from "./components/Home";
+import Projects from "./components/Projects";
 import Sidebar from "./components/Sidebar";
 import Skills from "./components/Skills";
 
@@ -37,10 +38,13 @@ function App() {
           <AboutMe />
         </div>
         <div className="relative">
+          <Skills />
+        </div>
+        <div className="relative">
           <Experience />
         </div>
         <div className="relative">
-          <Skills />
+          <Projects />
         </div>
         <div className="relative">
           <Contact />
