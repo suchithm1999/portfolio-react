@@ -64,7 +64,7 @@ function Footer() {
             />
           </div>
           <span className="text-xs font-serif text-gray-600">
-            Copyright © 2024 Suchith M
+            Copyright © {new Date().getFullYear()} M Suchith
           </span>
         </div>
       </div>

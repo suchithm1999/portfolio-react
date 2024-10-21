@@ -13,7 +13,7 @@ function Home() {
           <div className="text-white text-xl flex gap-2 items-center">
             <span>Hello, my name is </span>
             <span className="bg-gray-700 p-1 rounded px-3 font-semibold">
-              Suchith M
+              M Suchith
             </span>
           </div>
           <div className="flex items-center">
@@ -54,7 +54,7 @@ function Home() {
           <div className="text-white text-base flex gap-2 items-center">
             <span>Hello, my name is </span>
             <span className="bg-gray-700 p-0 rounded px-1 font-semibold">
-              Suchith M
+              M Suchith
             </span>
           </div>
           <div className="flex items-center">

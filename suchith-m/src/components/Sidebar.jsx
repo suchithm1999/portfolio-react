@@ -21,10 +21,10 @@ function Sidebar() {
   };
 
   const downloadResume = () => {
-    const fileUrl = "/Suchith M.pdf";
+    const fileUrl = "/M Suchith.pdf";
     const a = document.createElement("a");
     a.href = fileUrl;
-    a.download = "Suchith M.pdf";
+    a.download = "M Suchith.pdf";
     document.body.appendChild(a);
     a.click();
     document.body.removeChild(a);
@@ -57,7 +57,7 @@ function Sidebar() {
             className="w-36 h-36 rounded-full object-cover"
           />
           <span className="text-xl font-serif font-semibold text-600 pt-5">
-            Suchith M
+            M Suchith
           </span>
           <div>
             <h1 className="animate-typing overflow-hidden pt-3 whitespace-nowrap border-r-4 border-r-black pr-0 text-sm text-gray-500 font-medium">
@@ -184,7 +184,7 @@ function Sidebar() {
             />
           </div>
           <span className="text-xs font-serif text-gray-600">
-            Copyright © 2024 Suchith M
+            Copyright © {new Date().getFullYear()} M Suchith
           </span>
         </div>
       </div>
