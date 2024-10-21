@@ -1,9 +1,9 @@
 function AboutMe() {
   const downloadResume = () => {
-    const fileUrl = "/Suchith M.pdf";
+    const fileUrl = "/M Suchith.pdf";
     const a = document.createElement("a");
     a.href = fileUrl;
-    a.download = "Suchith M.pdf";
+    a.download = "M Suchith.pdf";
     document.body.appendChild(a);
     a.click();
     document.body.removeChild(a);
