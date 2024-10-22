@@ -24,9 +24,6 @@ function Home() {
               {` Software Developer ...!!`}
             </span>
           </div>
-          <span className="text-ellipsis text-white text-center font-medium pt-5">
-            {`Experienced Software Development Engineer proficient in web development, specializing in Angular, React, and TypeScript. Expertise extends to mobile application development with Ionic, alongside a strong foundation in front-end technologies and state management techniques.`}
-          </span>
           <div className="pt-5 flex gap-5">
             <Button
               to="about"

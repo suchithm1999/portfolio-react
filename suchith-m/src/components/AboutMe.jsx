@@ -29,13 +29,17 @@ function AboutMe() {
             About Me
           </span>
           <span className="text-xl font-medium text-gray-500 max-sm:text-sm">{`I'm a Software Development Engineer`}</span>
-          <span className="text-sm font-normal text-gray-500 max-lg:text-gray-700 leading-6 max-sm:text-xs max-lg:text-justify">{`Skilled Software Development Engineer with over 2 years of experience in web development, specializing in Angular, ReactJS, and Ionic framework. Proficient in integrating front-end components with REST APIs and collaborating effectively with back-end teams. Experienced in optimizing applications for performance, scalability, and accessibility. Passionate about creating innovative, user-friendly web applications that meet high standards of functionality and design. Strong foundation in Agile methodologies.`}</span>
+          <span className="text-sm font-normal text-gray-500 max-lg:text-gray-700 leading-6 max-sm:text-xs max-lg:text-justify">{`Skilled Full-Stack Software Development Engineer with over 2 years of experience specializing in MERN and MEAN
+stacks. Proficient in developing scalable, secure, and efficient applications using ReactJS, Angular, Node.js, Express.js,
+and MongoDB. Experienced in building RESTful APIs and integrating them with front-end components for seamless data
+synchronization. Passionate about delivering high-performance applications with a strong foundation in Agile
+methodologies and cross-team collaboration. Experienced in both web and mobile development.`}</span>
           <div className="border border-b-gray-300 p-2 border-x-0 border-t-0"></div>
           <div className="flex justify-between">
             <div className="text-sm flex flex-col m-3 max-lg:mx-0 gap-4 max-sm:text-xs max-lg:gap-2">
               <div className="flex gap-2">
                 <span className="font-semibold">Name:</span>
-                <span className="text-gray-500 font-medium">Suchith M</span>
+                <span className="text-gray-500 font-medium">M Suchith</span>
               </div>
               <div className="flex gap-2">
                 <span className="font-semibold">Age:</span>

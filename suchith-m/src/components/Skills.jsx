@@ -11,16 +11,15 @@ function Skills() {
         <div className="w-full flex flex-col gap-2 text-lg font-normal justify-between mt-12 max-lg:mt-4 max-sm:text-xs max-lg:text-sm max-lg:flex-col">
           <ul className="list-disc list-inside">
             <li>
-              <strong>Web Development:</strong> ReactJS, Angular, HTML, CSS,
-              Sass
+              <strong>Frontend:</strong> ReactJS, Angular, HTML5, CSS3, Sass,
+              JavaScript (ES6+), TypeScript
             </li>
             <li className="mt-2">
-              <strong>Programming Languages:</strong> TypeScript, JavaScript,
-              Python, Java
+              <strong>Backend:</strong> Node.js, Express.js, MongoDB
             </li>
             <li className="mt-2">
               <strong>State Management:</strong> Redux, Redux Toolkit, React
-              Hooks, RxJS
+              Hooks, RxJS, NgRx
             </li>
             <li className="mt-2">
               <strong>Mobile Development:</strong> Ionic, Cordova, Capacitor
@@ -29,8 +28,8 @@ function Skills() {
               <strong>Version Control:</strong> Git, GitHub, GitLab
             </li>
             <li className="mt-2">
-              <strong>Tools:</strong> Postman, Visual Studio Code, Android
-              Studio, Xcode, JIRA, Chrome DevTools
+              <strong>Devops & Tools:</strong> Postman, Visual Studio Code,
+              Android Studio, Xcode, JIRA, Chrome DevTools, Azure, Vercel
             </li>
             <li className="mt-2">
               <strong>Agile Methodologies:</strong> Sprint Planning, Daily
