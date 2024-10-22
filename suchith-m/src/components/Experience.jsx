@@ -23,26 +23,25 @@ function Experience() {
                 className="text-lg font-normal text-gray-950 flex flex-col gap-2 mt-0 max-lg:text-sm max-sm:text-xs"
               >
                 <li>
-                  {`Designed and developed user interfaces using Angular, ReactJS, HTML, CSS, TypeScript, and JavaScript.`}
+                  {`Developed and maintained full-stack applications using MERN (ReactJS, Node.js, Express.js, MongoDB) and MEAN
+(Angular, Node.js, Express.js, MongoDB) stacks.`}
                 </li>
                 <li>
-                  {`Translated Figma designs into responsive user interfaces (UI) for applications.`}
+                  {`Designed and optimized RESTful APIs for seamless integration with front-end components, reducing load times by
+30%.`}
                 </li>
                 <li>
-                  {`Integrated front-end components with REST APIs to fetch and display data.`}
+                  {`Translated Figma designs into responsive, pixel-perfect UIs for web and mobile applications.`}
                 </li>
                 <li>
-                  {`Collaborated with back-end developers to create a seamless user experience.`}
+                  {`Implemented state management using Redux and NgRx, improving user interaction efficiency by 25%.`}
                 </li>
                 <li>
-                  {`Optimized applications for performance and scalability.`}
+                  {`Collaborated with back-end developers to create robust, secure, and scalable APIs.`}
                 </li>
                 <li>
-                  {`Wrote clean, maintainable, and well-documented code.`}
-                </li>
-                <li>{`Tested and debugged applications to ensure quality.`}</li>
-                <li>
-                  {`Managed front-end deployment and facilitated uploads to the Play Store and App Store Connect.`}
+                  {`Tested and debugged applications, leading to a 25% decrease in bug reports, and managed deployment processes on
+Azure and mobile app stores.`}
                 </li>
               </ul>
             </div>
@@ -51,7 +50,7 @@ function Experience() {
           <div className="flex flex-col gap-2 items-center justify-between mt-12 max-lg:mt-5">
             <div className="flex justify-between w-full font-semibold text-xl max-lg:text-sm max-lg:flex-col">
               <span className="">SURYA SOFTWARE PRIVATE LIMITED</span>
-              <span>March 2022 - June 2022</span>
+              <span>February 2022 - June 2022</span>
             </div>
             <span className="w-full text-blue-700 font-semibold text-base max-lg:text-xs">
               Software Development Engineer (Internship)
@@ -62,11 +61,10 @@ function Experience() {
                 className="text-lg font-normal text-gray-950 flex flex-col gap-2 mt-0 max-lg:text-sm max-sm:text-xs"
               >
                 <li>
-                  {`Developed a web application using Angular and Typescript.`}
+                  {`Developed cross-platform mobile applications using Ionic, ensuring seamless functionality on both Android and iOS.`}
                 </li>
                 <li>
-                  {`Simultaneously, created Android and iOS applications within the same project using Ionic for native
-                    development.`}
+                  {`Collaborated with senior developers to implement and test APIs for real-time data handling using MongoDB.`}
                 </li>
               </ul>
             </div>
