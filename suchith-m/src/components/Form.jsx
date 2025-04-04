@@ -62,7 +62,7 @@ const Form = () => {
             htmlFor="fullname"
             className="block text-gray-700 font-semibold mb-2"
           >
-            Full Name
+            Name
           </label>
           <input
             type="text"

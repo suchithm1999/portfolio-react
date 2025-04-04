@@ -28,8 +28,8 @@ function AboutMe() {
           <span className="text-4xl font-bold max-sm:text-xl max-lg:text-2xl max-lg:mt-5">
             About Me
           </span>
-          <span className="text-xl font-medium text-gray-500 max-sm:text-sm">{`I'm a Software Development Engineer`}</span>
-          <span className="text-sm font-normal text-gray-500 max-lg:text-gray-700 leading-6 max-sm:text-xs max-lg:text-justify">{`Skilled Full-Stack Software Development Engineer with over 2 years of experience specializing in MERN and MEAN
+          <span className="text-xl font-medium text-gray-500 max-sm:text-sm">{`I'm a Senior Associate Software Development Engineer`}</span>
+          <span className="text-sm font-normal text-gray-500 max-lg:text-gray-700 leading-6 max-sm:text-xs max-lg:text-justify">{`Skilled Senior Associate Software Development Engineer with over 2 years of experience specializing in MERN and MEAN
 stacks. Proficient in developing scalable, secure, and efficient applications using ReactJS, Angular, Node.js, Express.js,
 and MongoDB. Experienced in building RESTful APIs and integrating them with front-end components for seamless data
 synchronization. Passionate about delivering high-performance applications with a strong foundation in Agile
@@ -39,7 +39,9 @@ methodologies and cross-team collaboration. Experienced in both web and mobile d
             <div className="text-sm flex flex-col m-3 max-lg:mx-0 gap-4 max-sm:text-xs max-lg:gap-2">
               <div className="flex gap-2">
                 <span className="font-semibold">Name:</span>
-                <span className="text-gray-500 font-medium">M Suchith</span>
+                <span className="text-gray-500 whitespace-nowrap font-medium">
+                  M Suchith
+                </span>
               </div>
               <div className="flex gap-2">
                 <span className="font-semibold">Age:</span>

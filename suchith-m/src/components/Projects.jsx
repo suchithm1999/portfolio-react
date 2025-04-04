@@ -22,62 +22,46 @@ function Projects() {
               </li>
               <li className="mt-1">
                 <strong>Key Contributions:</strong>
-                <ol className="list-disc list-inside ml-6">
+                <ul
+                  style={{ listStyleType: "disc" }}
+                  className="text-lg font-normal text-gray-950 flex flex-col gap-2 mt-0 max-lg:text-sm max-sm:text-xs"
+                >
                   <li>
-                    Led front-end development using ReactJS, Redux, TypeScript,
-                    HTML, and CSS to build a responsive and user-friendly
-                    interface.
+                    {`Led front-end development with ReactJS as part of a team of 2 front-end developers, collaborating with 2
+back-end developers to ensure seamless integration with back-end services built in Node.js and Express.js.`}
                   </li>
                   <li>
-                    Integrated REST APIs for real-time data synchronization,
-                    reducing data fetch times by 40%.
+                    {`Designed and implemented MongoDB-based data storage, resulting in a 30% improvement in data retrieval
+speed.`}
                   </li>
                   <li>
-                    Optimized user interaction efficiency by 25% through
-                    effective state management using Redux.
+                    {`Integrated Redux for state management, optimizing data flow and improving application performance by
+25%.`}
                   </li>
-                  <li>
-                    Improved overall workflow by implementing features that
-                    supported seamless communication and collaboration between
-                    different project teams.
-                  </li>
-                </ol>
+                </ul>
               </li>
             </ol>
             <div className="border border-b-gray-300 p-2 my-1 border-x-0 border-t-0 max-lg:p-0"></div>
             <div className="text-2xl font-semibold mb-1 mt-4 text-left underline max-lg:text-base max-sm:text-sm max-lg:flex-col">
               Back Office Application for Construction Management
             </div>
-            <ol className="list-none text-lg font-normal list-inside max-lg:text-sm max-lg:flex-col max-sm:text-xs">
+            <ul
+              style={{ listStyleType: "disc" }}
+              className="text-lg font-normal text-gray-950 flex flex-col gap-2 mt-0 max-lg:text-sm max-sm:text-xs"
+            >
               <li>
-                <strong>Objective:</strong> Created a back-office application to
-                support administrative tasks and data management for the
-                construction site monitoring application.
+                {`Designed and developed a highly responsive, intuitive UI using Angular, improving operational efficiency
+by 20% and streamlining internal processes.`}
               </li>
-              <li className="mt-1">
-                <strong>Key Contributions:</strong>
-                <ol className="list-disc list-inside ml-6">
-                  <li>
-                    Designed and developed the user interface using Angular,
-                    ensuring a cohesive and efficient user experience.
-                  </li>
-                  <li>
-                    Integrated REST APIs for seamless data management and
-                    administrative functions, enhancing data consistency and
-                    flow.
-                  </li>
-                  <li>
-                    Improved user satisfaction by 25% by creating a highly
-                    intuitive interface that simplified complex workflows.
-                  </li>
-                  <li>
-                    Collaborated with back-end developers to ensure smooth
-                    integration and synchronization between front-end components
-                    and back-end systems.
-                  </li>
-                </ol>
+              <li>
+                {`Optimized back-end data management with MongoDB, achieving a 25% increase in data synchronization
+speed.`}
               </li>
-            </ol>
+              <li>
+                {`Seamlessly integrated REST APIs, boosting real-time data synchronization performance by 40%, ensuring a
+smoother user experience.`}
+              </li>
+            </ul>
           </div>
         </div>
       </div>
