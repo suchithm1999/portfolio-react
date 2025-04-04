@@ -12,7 +12,7 @@ function Home() {
         <div className="h-screen w-2/5 flex flex-col gap-4 items-center justify-center max-lg:hidden">
           <div className="text-white text-xl flex gap-2 items-center">
             <span>Hello, my name is </span>
-            <span className="bg-gray-700 p-1 rounded px-3 font-semibold">
+            <span className="bg-gray-700 p-1 rounded whitespace-nowrap px-3 font-semibold">
               M Suchith
             </span>
           </div>
@@ -21,7 +21,7 @@ function Home() {
               {`I'm a`}
             </span>
             <span className="text-4xl text-white font-semibold overflow-hidden pt-3 whitespace-nowrap pr-0">
-              {` Software Developer ...!!`}
+              {` Senior Associate Software Development Engineer ...!!`}
             </span>
           </div>
           <div className="pt-5 flex gap-5">
@@ -59,7 +59,7 @@ function Home() {
               {`I'm a`}
             </span>
             <span className="text-base animate-typing text-white font-semibold overflow-hidden pt-1 whitespace-nowrap border-r-4 border-r-black pr-0">
-              {` Software Developer ...!!`}
+              {` Senior Associate Software Developer ...!!`}
             </span>
           </div>
         </div>

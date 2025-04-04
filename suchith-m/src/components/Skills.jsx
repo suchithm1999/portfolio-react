@@ -15,25 +15,23 @@ function Skills() {
               JavaScript (ES6+), TypeScript
             </li>
             <li className="mt-2">
-              <strong>Backend:</strong> Node.js, Express.js, MongoDB
-            </li>
-            <li className="mt-2">
-              <strong>State Management:</strong> Redux, Redux Toolkit, React
-              Hooks, RxJS, NgRx
+              <strong>Backend:</strong> Python, Node.js, Express.js, MongoDB,
+              RESTful APIs
             </li>
             <li className="mt-2">
               <strong>Mobile Development:</strong> Ionic, Cordova, Capacitor
             </li>
             <li className="mt-2">
-              <strong>Version Control:</strong> Git, GitHub, GitLab
+              <strong>State Management:</strong> Redux, Redux Toolkit, React
+              Hooks, RxJS
             </li>
             <li className="mt-2">
-              <strong>Devops & Tools:</strong> Postman, Visual Studio Code,
-              Android Studio, Xcode, JIRA, Chrome DevTools, Azure, Vercel
+              <strong>Version Control:</strong> Git, GitHub, GitLab, Postman,
+              Vercel
             </li>
             <li className="mt-2">
-              <strong>Agile Methodologies:</strong> Sprint Planning, Daily
-              Standups, Velocity Analysis, Retrospective
+              <strong>Tools & Methodologies:</strong> JIRA, Visual Studio Code,
+              Agile (Scrum, Sprint Planning, Retrospectives)
             </li>
           </ul>
         </div>
