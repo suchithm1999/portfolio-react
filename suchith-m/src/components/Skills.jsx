@@ -11,27 +11,22 @@ function Skills() {
         <div className="w-full flex flex-col gap-2 text-lg font-normal justify-between mt-12 max-lg:mt-4 max-sm:text-xs max-lg:text-sm max-lg:flex-col">
           <ul className="list-disc list-inside">
             <li>
-              <strong>Frontend:</strong> ReactJS, Angular, HTML5, CSS3, Sass,
-              JavaScript (ES6+), TypeScript
+              <strong>Frontend:</strong> ReactJS, Angular, HTML5, CSS3, Sass, JavaScript (ES6+), TypeScript
             </li>
             <li className="mt-2">
-              <strong>Backend:</strong> Python, Node.js, Express.js, MongoDB,
-              RESTful APIs
+              <strong>Backend:</strong> Node.js, NestJS, Express.js, MongoDB, REST APIs
             </li>
             <li className="mt-2">
-              <strong>Mobile Development:</strong> Ionic, Cordova, Capacitor
+              <strong>Mobile:</strong> Ionic, Capacitor, Cordova
             </li>
             <li className="mt-2">
-              <strong>State Management:</strong> Redux, Redux Toolkit, React
-              Hooks, RxJS
+              <strong>State Management:</strong> Redux, Redux Toolkit, React Hooks, RxJS
             </li>
             <li className="mt-2">
-              <strong>Version Control:</strong> Git, GitHub, GitLab, Postman,
-              Vercel
+              <strong>Testing:</strong> Jest, Postman
             </li>
             <li className="mt-2">
-              <strong>Tools & Methodologies:</strong> JIRA, Visual Studio Code,
-              Agile (Scrum, Sprint Planning, Retrospectives)
+              <strong>Tools & Methodologies:</strong> Git, GitHub, GitLab, CI/CD, JIRA, Agile (Scrum)
             </li>
           </ul>
         </div>

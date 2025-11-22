@@ -11,7 +11,7 @@ import { BiLogoGmail } from "react-icons/bi";
 import "/src/App.css";
 import { Button } from "react-scroll";
 import { useState } from "react";
-import { FaProjectDiagram } from "react-icons/fa";
+import { FaProjectDiagram, FaGraduationCap } from "react-icons/fa";
 
 function Sidebar() {
   const [activeLink, setActiveLink] = useState(null);
@@ -124,6 +124,18 @@ function Sidebar() {
         >
           <FaProjectDiagram className="text-xl text-gray-600 font-extralight" />
           <span>Projects</span>
+        </Button>
+        <Button
+          to="education"
+          spy={true}
+          smooth={true}
+          offset={-50}
+          duration={500}
+          onSetActive={handleSetActive}
+          className={`${activeLink === "education" ? "active" : ""} w-full flex p-4 pl-5 px-8 border-t-0 items-center gap-4 text-sm border text-gray-900 border-x-0 hover:text-blue-700 hover:bg-gray-100 cursor-pointer font-medium`}
+        >
+          <FaGraduationCap className="text-xl text-gray-600 font-extralight" />
+          <span>Education</span>
         </Button>
         <Button
           onClick={downloadResume}

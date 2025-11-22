@@ -17,6 +17,25 @@ function Experience() {
             <span className="w-full text-blue-700 font-semibold text-base max-lg:text-xs">
               Senior Associate Software Development Engineer
             </span>
+            <div className="w-full">
+              <ul
+                style={{ listStyleType: "disc" }}
+                className="text-lg font-normal text-gray-950 flex flex-col gap-2 mt-0 max-lg:text-sm max-sm:text-xs"
+              >
+                <li>
+                  {`Developed scalable backend services using NestJS; implemented unit and integration tests with Jest, reducing QA-reported bugs by 35%.`}
+                </li>
+                <li>
+                  {`Designed and deployed a Kafka-based message consumer pipeline for Excel ingestion, automating workflows and saving 10+ hours/week.`}
+                </li>
+                <li>
+                  {`Migrated legacy MongoDB Realm Function–based GraphQL APIs to Apollo Federation, adding schema validation and automated regression suites, reducing post-deployment issues by 25%.`}
+                </li>
+                <li>
+                  {`Collaborated with DevOps teams to enhance CI/CD pipelines, ensuring zero-downtime deployments and improved release reliability.`}
+                </li>
+              </ul>
+            </div>
           </div>
           <div className="border border-b-gray-300 p-2 my-4 border-x-0 border-t-0 max-lg:p-0"></div>
           <div className="flex flex-col gap-2 items-center justify-between mt-12 max-lg:mt-4">
@@ -25,7 +44,7 @@ function Experience() {
               <span>July 2022 - April 2024</span>
             </div>
             <span className="w-full text-blue-700 font-semibold text-base max-lg:text-xs">
-              Software Development Engineer 1
+              Software Development Engineer I
             </span>
             <div className="w-full">
               <ul
@@ -33,28 +52,19 @@ function Experience() {
                 className="text-lg font-normal text-gray-950 flex flex-col gap-2 mt-0 max-lg:text-sm max-sm:text-xs"
               >
                 <li>
-                  {`Developed and maintained two full-stack applications using MERN (ReactJS, Node.js, Express.js,
-MongoDB) and MEAN (Angular, Node.js, Express.js, MongoDB) stacks, serving 100+ users daily.`}
+                  {`Built and maintained full-stack applications using MERN and MEAN stacks, supporting 100+ daily active users.`}
                 </li>
                 <li>
-                  {`Optimized RESTful APIs, reducing average load times by 30% (from 3 seconds to 2.1 seconds), enhancing
-application performance.`}
+                  {`Optimized REST APIs, cutting average response times by 30% (3s → 2.1s) and improving user experience.`}
                 </li>
                 <li>
-                  {`Converted Figma designs into responsive UIs with 99% pixel accuracy, ensuring a seamless user experience
-across both web and mobile platforms.`}
+                  {`Translated Figma designs into responsive UIs with 99% pixel accuracy, enhancing cross-platform consistency.`}
                 </li>
                 <li>
-                  {`Implemented state management using Redux and RxJs, increasing application efficiency and reducing
-interaction latency by 25%.`}
+                  {`Implemented Redux and RxJS state management, reducing UI interaction latency by 25%.`}
                 </li>
                 <li>
-                  {`Conducted debugging efforts, leading to a 25% reduction in bug reports, ensuring consistent application
-stability.`}
-                </li>
-                <li>
-                  {`Deployed both applications to a secure server, ensuring high performance, robust security, and compliance
-with industry standards.`}
+                  {`Deployed frontend applications on secure hosting environments ensuring uptime and compliance.`}
                 </li>
               </ul>
             </div>
@@ -74,16 +84,13 @@ with industry standards.`}
                 className="text-lg font-normal text-gray-950 flex flex-col gap-2 mt-0 max-lg:text-sm max-sm:text-xs"
               >
                 <li>
-                  {`Developed cross-platform mobile applications using Ionic, ensuring seamless functionality on both Android
-and iOS, leading to a 30% reduction in development time compared to separate native builds.`}
+                  {`Built cross-platform mobile applications using Ionic, reducing development time by 30% compared to native builds.`}
                 </li>
                 <li>
-                  {`Implemented and tested APIs for real-time data handling, improving response consistency and reliability,
-resulting in a 40% decrease in latency and a 20% increase in user satisfaction.`}
+                  {`Developed and tested REST APIs for real-time data processing, improving response consistency and reducing latency by 40%.`}
                 </li>
                 <li>
-                  {`Collaborated with senior developers to refine app workflows and enhance user experiences, contributing to
-a 15% improvement in app usability scores and 25% reduction in user-reported issues.`}
+                  {`Enhanced UI/UX workflows in collaboration with senior engineers, improving usability scores by 15% and reducing user-reported issues by 25%.`}
                 </li>
               </ul>
             </div>
