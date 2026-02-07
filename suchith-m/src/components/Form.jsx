@@ -31,18 +31,18 @@ const Form = () => {
       })
       .then(
         () => {
-          console.log("SUCCESS!");
           setFormData(initialFormData);
           setSpinner(false);
           setCheckmark(true);
           setTimeout(() => {
             setCheckmark(false);
             setSendButton(true);
-          }, 500);
+          }, 2000);
         },
         (error) => {
-          console.log("FAILED...", error);
+          console.error("FAILED...", error);
           setSendButton(true);
+          setSpinner(false);
         },
       );
   };
@@ -55,13 +55,10 @@ const Form = () => {
   };
 
   return (
-    <div className="w-3/5 max-lg:w-11/12 hover:shadow-2xl hover:shadow-indigo-300 mx-auto drop-shadow-2xl my-5 mb-10 bg-white p-8 rounded-md shadow-md">
-      <form ref={form} onSubmit={handleSubmit}>
-        <div className="mb-4">
-          <label
-            htmlFor="fullname"
-            className="block text-gray-700 font-semibold mb-2"
-          >
+    <div className="glass-card p-8 w-full max-w-2xl mx-auto shadow-2xl dark:shadow-none bg-white/90 dark:bg-slate-800/20 border-white/60 dark:border-slate-700/30">
+      <form ref={form} onSubmit={handleSubmit} className="space-y-6">
+        <div className="space-y-2">
+          <label htmlFor="fullname" className="text-sm font-semibold text-slate-700 dark:text-slate-400 uppercase tracking-wider">
             Name
           </label>
           <input
@@ -70,15 +67,14 @@ const Form = () => {
             name="fullname"
             value={formData.fullname}
             onChange={handleChange}
-            className="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-blue-500"
+            placeholder="John Doe"
+            className="w-full px-4 py-3 rounded-lg bg-white dark:bg-slate-900/50 border border-indigo-100 dark:border-slate-700 text-slate-900 dark:text-slate-200 placeholder-slate-400 dark:placeholder-slate-600 focus:outline-none focus:border-indigo-500 focus:ring-4 focus:ring-indigo-500/10 transition-all shadow-sm"
             required
           />
         </div>
-        <div className="mb-4">
-          <label
-            htmlFor="email"
-            className="block text-gray-700 font-semibold mb-2"
-          >
+
+        <div className="space-y-2">
+          <label htmlFor="email" className="text-sm font-semibold text-slate-700 dark:text-slate-400 uppercase tracking-wider">
             Email
           </label>
           <input
@@ -87,15 +83,14 @@ const Form = () => {
             name="email"
             value={formData.email}
             onChange={handleChange}
-            className="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-blue-500"
+            placeholder="john@example.com"
+            className="w-full px-4 py-3 rounded-lg bg-white dark:bg-slate-900/50 border border-indigo-100 dark:border-slate-700 text-slate-900 dark:text-slate-200 placeholder-slate-400 dark:placeholder-slate-600 focus:outline-none focus:border-indigo-500 focus:ring-4 focus:ring-indigo-500/10 transition-all shadow-sm"
             required
           />
         </div>
-        <div className="mb-6">
-          <label
-            htmlFor="message"
-            className="block text-gray-700 font-semibold mb-2"
-          >
+
+        <div className="space-y-2">
+          <label htmlFor="message" className="text-sm font-semibold text-slate-700 dark:text-slate-400 uppercase tracking-wider">
             Message
           </label>
           <textarea
@@ -103,23 +98,37 @@ const Form = () => {
             name="message"
             value={formData.message}
             onChange={handleChange}
-            className="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-blue-500"
+            placeholder="Your message here..."
+            className="w-full px-4 py-3 rounded-lg bg-white dark:bg-slate-900/50 border border-indigo-100 dark:border-slate-700 text-slate-900 dark:text-slate-200 placeholder-slate-400 dark:placeholder-slate-600 focus:outline-none focus:border-indigo-500 focus:ring-4 focus:ring-indigo-500/10 transition-all resize-y min-h-[120px] shadow-sm"
             rows="4"
             required
           ></textarea>
         </div>
-        <div className="flex justify-end items-center h-12 p-2.5">
+
+        <div className="flex justify-end pt-2">
           {showSendButton && (
             <button
               type="submit"
-              className="bg-blue-700 mt-0 p-2.5 px-5 active:bg-blue-500 text-white rounded-full font-medium w-max max-lg:text-xs max-lg:px-3"
+              className="px-8 py-3 rounded-lg bg-gradient-to-r from-indigo-600 to-indigo-700 hover:from-indigo-500 hover:to-indigo-600 text-white font-semibold shadow-lg shadow-indigo-500/20 transition-all hover:scale-105 active:scale-95 flex items-center gap-2"
             >
-              Send a Message
+              <span>Send Message</span>
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
+              </svg>
             </button>
           )}
-          {showSpinner && <Spinner className="p-2.5" />}
+
+          {showSpinner && (
+            <div className="px-8 py-2">
+              <Spinner />
+            </div>
+          )}
+
           {showCheckMark && (
-            <FaCheck className="text-blue-700 animate-fade text-3xl" />
+            <div className="flex items-center gap-2 text-green-600 dark:text-green-400 px-4 py-2 bg-green-50 dark:bg-green-400/10 rounded-lg border border-green-200 dark:border-green-400/20">
+              <FaCheck />
+              <span className="font-medium">Message Sent!</span>
+            </div>
           )}
         </div>
       </form>

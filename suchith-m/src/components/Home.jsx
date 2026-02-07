@@ -1,70 +1,65 @@
-import { Button } from "react-scroll";
-import "/src/App.css";
+import { Link } from "react-scroll";
 
 function Home() {
   return (
-    <>
-      <div
-        id="home"
-        style={{ zIndex: 3 }}
-        className="w-full h-screen max-lg:h-56 absolute bottom-0 object-fill flex items-center justify-center"
-      >
-        <div className="h-screen w-2/5 flex flex-col gap-4 items-center justify-center max-lg:hidden">
-          <div className="text-white text-xl flex gap-2 items-center">
-            <span>Hello, my name is </span>
-            <span className="bg-gray-700 p-1 rounded whitespace-nowrap px-3 font-semibold">
-              M Suchith
+    <div id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden px-6 transition-colors">
+      {/* Background Gradients */}
+      <div className="absolute top-[-20%] left-[-10%] w-[500px] h-[500px] bg-indigo-500/10 dark:bg-indigo-600/20 rounded-full blur-[120px] pointer-events-none" />
+      <div className="absolute bottom-[-20%] right-[-10%] w-[500px] h-[500px] bg-cyan-500/10 dark:bg-cyan-600/10 rounded-full blur-[120px] pointer-events-none" />
+
+      <div className="max-w-4xl w-full flex flex-col items-center text-center z-10 space-y-8">
+        {/* Intro Badge */}
+        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/50 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700/50 backdrop-blur-sm animate-fade shadow-sm">
+          <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
+          <span className="text-xs font-medium text-slate-600 dark:text-slate-300">Open to Opportunities</span>
+        </div>
+
+        {/* Main Title */}
+        <div className="space-y-4">
+          <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-slate-900 dark:text-slate-100">
+            Hi, I'm <span className="text-gradient">M Suchith</span>
+          </h1>
+          <div className="h-20 md:h-24 flex items-center justify-center overflow-hidden">
+            <span className="text-xl md:text-2xl lg:text-3xl font-mono text-slate-500 dark:text-slate-400">
+              Senior Associate SDE
+              <span className="animate-[blink_1s_infinite] text-indigo-500 font-bold ml-1">_</span>
             </span>
-          </div>
-          <div className="flex items-center">
-            <span className="text-4xl text-white font-semibold whitespace-nowrap pt-3 pr-3">
-              {`I'm a`}
-            </span>
-            <span className="text-4xl text-white font-semibold overflow-hidden pt-3 whitespace-nowrap pr-0">
-              {` Senior Associate Software Development Engineer ...!!`}
-            </span>
-          </div>
-          <div className="pt-5 flex gap-5">
-            <Button
-              to="about"
-              spy={true}
-              smooth={true}
-              offset={-100}
-              duration={500}
-              className="bg-white p-2.5 px-5 active:bg-gray-200 text-black rounded-full font-medium cursor-pointer"
-            >
-              About Me
-            </Button>
-            <Button
-              to="work-experience"
-              spy={true}
-              smooth={true}
-              offset={-50}
-              duration={500}
-              className="bg-blue-700 p-2.5 px-5 active:bg-blue-500 text-white rounded-full font-medium cursor-pointer"
-            >
-              Work Experience
-            </Button>
           </div>
         </div>
-        <div className="h-full w-3/5 max-lg:-top-5 max-lg:absolute hidden flex-col gap-1 items-center justify-center max-lg:flex">
-          <div className="text-white text-base flex gap-2 items-center">
-            <span>Hello, my name is </span>
-            <span className="bg-gray-700 p-0 rounded px-1 font-semibold">
-              M Suchith
-            </span>
-          </div>
-          <div className="flex items-center">
-            <span className="text-lg text-white font-semibold whitespace-nowrap pt-1 pr-1">
-              {`I'm a`}
-            </span>
-            <span className="text-base animate-typing text-white font-semibold overflow-hidden pt-1 whitespace-nowrap border-r-4 border-r-black pr-0">
-              {` Senior Associate Software Developer ...!!`}
-            </span>
-          </div>
+
+        {/* Description */}
+        <p className="text-lg md:text-xl text-slate-600 dark:text-slate-400 max-w-2xl leading-relaxed">
+          Building scalable, high-performance web applications with
+          <span className="text-indigo-600 dark:text-indigo-400 font-semibold mx-1">React</span>,
+          <span className="text-indigo-600 dark:text-indigo-400 font-semibold mx-1">NestJS</span>, and
+          <span className="text-indigo-600 dark:text-indigo-400 font-semibold mx-1">Microservices</span>.
+          Focused on delivering robust code and efficient distributed systems.
+        </p>
+
+        {/* CTAs */}
+        <div className="flex flex-col sm:flex-row gap-4 pt-4">
+          <Link
+            to="work-experience"
+            smooth={true}
+            offset={-50}
+            duration={500}
+            className="px-8 py-4 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white font-medium shadow-lg shadow-indigo-500/25 transition-all hover:scale-105 active:scale-95 cursor-pointer"
+          >
+            View My Work
+          </Link>
+          <Link
+            to="contacts"
+            smooth={true}
+            offset={-50}
+            duration={500}
+            className="px-8 py-4 rounded-xl bg-white dark:bg-slate-800 hover:bg-slate-50 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200 border border-slate-200 dark:border-slate-700 font-medium transition-all hover:scale-105 active:scale-95 cursor-pointer shadow-sm"
+          >
+            Contact Me
+          </Link>
         </div>
       </div>
-    </>
+    </div>
   );
 }
+
 export default Home;

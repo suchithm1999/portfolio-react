@@ -1,52 +1,63 @@
-import { BiLogoGmail } from "react-icons/bi";
-import { BiLogoWhatsapp } from "react-icons/bi";
+import { BiLogoGmail, BiLogoWhatsapp } from "react-icons/bi";
 import Form from "./Form";
 
 function Contact() {
   const sendEmail = () => {
-    const emailAddress = "suchithm1999@gmail.com";
-    const mailtoLink = `mailto:${emailAddress}`;
-    window.open(mailtoLink, "_blank");
+    window.open("mailto:suchithm1999@gmail.com", "_blank");
   };
 
   const sendWhatsappMessage = () => {
-    const whatsappUrl = "https://api.whatsapp.com/send?phone=919164389511";
-    window.open(whatsappUrl, "_blank");
+    window.open("https://api.whatsapp.com/send?phone=919164389511", "_blank");
   };
+
   return (
-    <>
-      <div
-        id="contacts"
-        className="h-full w-full flex flex-col items-center bg-map-image bg-cover bg-no-repeat px-16 max-lg:p-0 pt-0 m-8 mt-5 mb-0 mx-auto"
-      >
-        <span className="text-4xl font-bold text-center max-lg:text-2xl max-sm:text-xl">
-          Get in Touch
-        </span>
-        <Form />
-        <div className="flex w-full max-lg:flex-col items-center justify-center">
-          <div
-            onClick={sendEmail}
-            className="w-full max-lg:w-9/12 cursor-pointer flex flex-col items-center justify-between text-center gap-2 drop-shadow-2xl shadow-indigo-50 bg-opacity-100 bg-white hover:shadow-2xl hover:shadow-indigo-300 rounded hover:rounded-tl-3xl hover:rounded-br-3xl max-h-64 m-8 max-lg:m-4 p-8"
-          >
-            <BiLogoGmail className="text-3xl" />
-            <span className="text-xl font-bold text-gray-700">Email</span>
-            <div className="text-ellipsis text-base font-normal font-serif text-gray-700">
-              suchithm1999@gmail.com
+    <div id="contacts" className="min-h-screen flex items-center justify-center p-6 relative">
+      {/* Background Decor */}
+      <div className="absolute left-0 top-1/2 w-96 h-96 bg-indigo-500/10 dark:bg-indigo-600/10 rounded-full blur-3xl pointer-events-none" />
+
+      <div className="max-w-6xl w-full space-y-12">
+        <div className="text-center space-y-4">
+          <h2 className="section-title">Get in Touch</h2>
+          <div className="w-24 h-1.5 bg-gradient-to-r from-indigo-500 to-cyan-500 rounded-full mx-auto" />
+        </div>
+
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          {/* Contact Actions */}
+          <div className="space-y-6 lg:col-span-1">
+            <div
+              onClick={sendEmail}
+              className="glass-card p-6 flex items-center gap-4 cursor-pointer hover:bg-slate-100 dark:hover:bg-slate-800/60 transition-colors group"
+            >
+              <div className="p-4 rounded-full bg-slate-200 dark:bg-slate-800 text-slate-600 dark:text-slate-300 group-hover:text-red-500 dark:group-hover:text-red-400 transition-colors">
+                <BiLogoGmail className="text-2xl" />
+              </div>
+              <div>
+                <h3 className="font-bold text-slate-800 dark:text-slate-200">Email</h3>
+                <p className="text-sm text-slate-500 dark:text-slate-400">suchithm1999@gmail.com</p>
+              </div>
+            </div>
+
+            <div
+              onClick={sendWhatsappMessage}
+              className="glass-card p-6 flex items-center gap-4 cursor-pointer hover:bg-slate-100 dark:hover:bg-slate-800/60 transition-colors group"
+            >
+              <div className="p-4 rounded-full bg-slate-200 dark:bg-slate-800 text-slate-600 dark:text-slate-300 group-hover:text-green-500 dark:group-hover:text-green-400 transition-colors">
+                <BiLogoWhatsapp className="text-2xl" />
+              </div>
+              <div>
+                <h3 className="font-bold text-slate-800 dark:text-slate-200">WhatsApp</h3>
+                <p className="text-sm text-slate-500 dark:text-slate-400">+91-9164389511</p>
+              </div>
             </div>
           </div>
-          <div
-            onClick={sendWhatsappMessage}
-            className="w-full max-lg:w-9/12 cursor-pointer flex flex-col items-center justify-between text-center gap-2 drop-shadow-2xl shadow-indigo-50 bg-opacity-100 bg-white hover:shadow-2xl hover:shadow-indigo-300 rounded hover:rounded-tl-3xl hover:rounded-br-3xl max-h-64 m-8 max-lg:m-4 p-8"
-          >
-            <BiLogoWhatsapp className="text-3xl" />
-            <span className="text-xl font-bold text-gray-700">WhatsApp</span>
-            <div className="text-ellipsis text-base font-normal font-serif text-gray-700">
-              +91-9164389511
-            </div>
+
+          {/* Form */}
+          <div className="lg:col-span-2">
+            <Form />
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

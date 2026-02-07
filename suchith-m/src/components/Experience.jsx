@@ -1,103 +1,102 @@
 function Experience() {
+  const jobs = [
+    {
+      company: "NTT DATA, INC",
+      role: "Senior Associate Software Development Engineer",
+      duration: "March 2025 - Present",
+      description: [
+        "Built and scaled NestJS-based backend services with comprehensive unit and integration testing using Jest, reducing production defects by 35%.",
+        "Designed and deployed a Kafka-based asynchronous consumer pipeline for data ingestion, automating data workflows and saving 10+ hours per week.",
+        "Modernized legacy MongoDB Realm Function GraphQL services by migrating to Apollo Federation, improving schema governance and reducing post-release incidents by 25%.",
+        "Partnered with DevOps teams to strengthen CI/CD pipelines, enabling zero-downtime deployments and improving overall release reliability."
+      ]
+    },
+    {
+      company: "SURYA DIGITECH PRIVATE LIMITED",
+      role: "Software Development Engineer I",
+      duration: "July 2022 - April 2024",
+      description: [
+        "Designed, built, and maintained full-stack applications using MERN and MEAN stacks, supporting 1000+ daily active users.",
+        "Optimized RESTful APIs, reducing average response times by 30% (3s → 2.1s) and improving overall application performance.",
+        "Delivered responsive, scalable UIs from Figma designs, ensuring consistent user experience across devices and browsers.",
+        "Implemented Redux and RxJS–based state management, reducing UI interaction latency by 25% and improving data flow reliability."
+      ]
+    },
+    {
+      company: "SURYA SOFTWARE SYSTEMS PRIVATE LIMITED",
+      role: "Software Development Engineer Internship",
+      duration: "February 2022 - June 2022",
+      description: [
+        "Delivered cross-platform mobile apps using Ionic, accelerating feature delivery by 30% over native builds.",
+        "Implemented and validated RESTful APIs supporting real-time workflows, reducing latency by 40%.",
+        "Partnered with senior engineers to refine UI/UX interactions, improving usability metrics by 15% and reducing reported issues by 25%."
+      ]
+    }
+  ];
+
   return (
-    <>
-      <div
-        id="work-experience"
-        className="h-full w-full flex flex-col bg-map-image bg-no-repeat bg-cover items-center p-14 pt-12 m-8 mx-auto max-lg:p-0 "
-      >
-        <span className="text-4xl max-lg:text-2xl font-bold max-sm:text-xl">
-          Work Experience
-        </span>
-        <div className="w-4/5">
-          <div className="flex flex-col gap-2 items-center justify-between mt-12 max-lg:mt-5">
-            <div className="flex justify-between w-full font-semibold text-xl max-lg:text-sm max-lg:flex-col">
-              <span className="">NTT DATA, INC</span>
-              <span>March 2025 - Present</span>
+    <div id="work-experience" className="min-h-screen flex items-center justify-center p-6 relative">
+      <div className="max-w-5xl w-full space-y-12">
+        {/* Header */}
+        <div className="text-center space-y-4">
+          <h2 className="section-title">Work Experience</h2>
+          <div className="w-24 h-1.5 bg-gradient-to-r from-indigo-500 to-cyan-500 rounded-full mx-auto" />
+        </div>
+
+        {/* Timeline Container */}
+        <div className="relative space-y-8 pl-8 md:pl-0">
+          {/* Vertical Line */}
+          <div className="absolute left-8 md:left-1/2 top-0 bottom-0 w-0.5 bg-slate-300 dark:bg-slate-800 -translate-x-1/2 hidden md:block" />
+          <div className="absolute left-2 top-0 bottom-0 w-0.5 bg-slate-300 dark:bg-slate-800 md:hidden" />
+
+          {jobs.map((job, index) => (
+            <div key={index} className={`relative flex flex-col md:flex-row gap-8 ${index % 2 === 0 ? 'md:flex-row-reverse' : ''}`}>
+
+              {/* Timeline Dot */}
+              <div className="absolute left-2 md:left-1/2 w-4 h-4 bg-indigo-500 rounded-full border-4 border-slate-50 dark:border-slate-950 shadow-[0_0_0_4px_rgba(99,102,241,0.2)] -translate-x-1/2 top-6 z-10" />
+
+              {/* Date (Desktop only, opposite side) */}
+              <div className={`hidden md:flex w-1/2 items-start pt-5 ${index % 2 === 0 ? 'justify-start pl-8' : 'justify-end pr-8'}`}>
+                <span className="text-indigo-600 dark:text-indigo-400 font-mono text-sm tracking-wider">{job.duration}</span>
+              </div>
+
+              {/* Content Card */}
+              <div className="flex-1 md:w-1/2 pl-8 md:pl-0">
+                <div className="glass-card p-6 md:p-8 space-y-4 relative group hover:border-indigo-500/30">
+                  {/* Arrow for Desktop */}
+                  <div className={`hidden md:block absolute top-6 w-4 h-4 
+                    bg-white dark:bg-slate-900 
+                    border-l border-b border-slate-200 dark:border-slate-700/30 
+                    rotate-45 group-hover:bg-white dark:group-hover:bg-slate-800/40 
+                    group-hover:border-indigo-200 dark:group-hover:border-slate-600 
+                    transition-colors duration-300
+                    ${index % 2 === 0
+                      ? '-right-2.5 border-r border-t border-l-0 border-b-0'
+                      : '-left-2.5 border-l border-b'}
+                  `} />
+
+                  <div className="space-y-1">
+                    <div className="md:hidden text-indigo-600 dark:text-indigo-400 text-xs font-mono mb-2">{job.duration}</div>
+                    <h3 className="text-xl font-bold text-slate-800 dark:text-slate-100">{job.role}</h3>
+                    <h4 className="text-lg font-medium text-indigo-600 dark:text-indigo-400">{job.company}</h4>
+                  </div>
+
+                  <ul className="space-y-3">
+                    {job.description.map((desc, i) => (
+                      <li key={i} className="flex gap-3 text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+                        <span className="text-indigo-500 mt-1.5 min-w-[6px] h-1.5 rounded-full bg-indigo-500" />
+                        <span>{desc}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+
             </div>
-            <span className="w-full text-blue-700 font-semibold text-base max-lg:text-xs">
-              Senior Associate Software Development Engineer
-            </span>
-            <div className="w-full">
-              <ul
-                style={{ listStyleType: "disc" }}
-                className="text-lg font-normal text-gray-950 flex flex-col gap-2 mt-0 max-lg:text-sm max-sm:text-xs"
-              >
-                <li>
-                  {`Developed scalable backend services using NestJS; implemented unit and integration tests with Jest, reducing QA-reported bugs by 35%.`}
-                </li>
-                <li>
-                  {`Designed and deployed a Kafka-based message consumer pipeline for Excel ingestion, automating workflows and saving 10+ hours/week.`}
-                </li>
-                <li>
-                  {`Migrated legacy MongoDB Realm Function–based GraphQL APIs to Apollo Federation, adding schema validation and automated regression suites, reducing post-deployment issues by 25%.`}
-                </li>
-                <li>
-                  {`Collaborated with DevOps teams to enhance CI/CD pipelines, ensuring zero-downtime deployments and improved release reliability.`}
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div className="border border-b-gray-300 p-2 my-4 border-x-0 border-t-0 max-lg:p-0"></div>
-          <div className="flex flex-col gap-2 items-center justify-between mt-12 max-lg:mt-4">
-            <div className="flex justify-between w-full font-semibold text-xl max-lg:text-sm max-lg:flex-col">
-              <span>SURYA DIGITECH PRIVATE LIMITED</span>
-              <span>July 2022 - April 2024</span>
-            </div>
-            <span className="w-full text-blue-700 font-semibold text-base max-lg:text-xs">
-              Software Development Engineer I
-            </span>
-            <div className="w-full">
-              <ul
-                style={{ listStyleType: "disc" }}
-                className="text-lg font-normal text-gray-950 flex flex-col gap-2 mt-0 max-lg:text-sm max-sm:text-xs"
-              >
-                <li>
-                  {`Built and maintained full-stack applications using MERN and MEAN stacks, supporting 100+ daily active users.`}
-                </li>
-                <li>
-                  {`Optimized REST APIs, cutting average response times by 30% (3s → 2.1s) and improving user experience.`}
-                </li>
-                <li>
-                  {`Translated Figma designs into responsive UIs with 99% pixel accuracy, enhancing cross-platform consistency.`}
-                </li>
-                <li>
-                  {`Implemented Redux and RxJS state management, reducing UI interaction latency by 25%.`}
-                </li>
-                <li>
-                  {`Deployed frontend applications on secure hosting environments ensuring uptime and compliance.`}
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div className="border border-b-gray-300 p-2 my-4 border-x-0 border-t-0 max-lg:p-0"></div>
-          <div className="flex flex-col gap-2 items-center justify-between mt-12 max-lg:mt-5">
-            <div className="flex justify-between w-full font-semibold text-xl max-lg:text-sm max-lg:flex-col">
-              <span className="">SURYA SOFTWARE SYSTEMS PRIVATE LIMITED</span>
-              <span>February 2022 - June 2022</span>
-            </div>
-            <span className="w-full text-blue-700 font-semibold text-base max-lg:text-xs">
-              Software Development Engineer Intern
-            </span>
-            <div className="w-full">
-              <ul
-                style={{ listStyleType: "disc" }}
-                className="text-lg font-normal text-gray-950 flex flex-col gap-2 mt-0 max-lg:text-sm max-sm:text-xs"
-              >
-                <li>
-                  {`Built cross-platform mobile applications using Ionic, reducing development time by 30% compared to native builds.`}
-                </li>
-                <li>
-                  {`Developed and tested REST APIs for real-time data processing, improving response consistency and reducing latency by 40%.`}
-                </li>
-                <li>
-                  {`Enhanced UI/UX workflows in collaboration with senior engineers, improving usability scores by 15% and reducing user-reported issues by 25%.`}
-                </li>
-              </ul>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
-    </>
+    </div>
   );
 }
 
