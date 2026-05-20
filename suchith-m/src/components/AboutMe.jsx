@@ -25,15 +25,13 @@ function AboutMe() {
           <div className="space-y-6 text-slate-600 dark:text-slate-400 text-lg leading-relaxed">
             <p>
               I am a <span className="text-slate-900 dark:text-slate-200 font-semibold">Senior Associate Software Development Engineer</span> based in Bangalore, India.
-              With over 2 years of hands-on experience, I specialize in building robust, scalable web applications.
+              With 3+ years of experience architecting and delivering scalable, high-performance web applications.
             </p>
             <p>
-              My expertise lies in the <span className="text-indigo-600 dark:text-indigo-400 font-medium">MERN stack</span> (MongoDB, Express, React, Node.js) and
-              <span className="text-indigo-600 dark:text-indigo-400 font-medium"> NestJS</span> for backend microservices. I have a strong background in distributed systems,
-              utilizing Kafka for real-time data pipelines and optimizing APIs for high performance.
+              My expertise spans the <span className="text-indigo-600 dark:text-indigo-400 font-medium">MERN &amp; MEAN stacks</span>, <span className="text-indigo-600 dark:text-indigo-400 font-medium">NestJS</span> microservices, <span className="text-indigo-600 dark:text-indigo-400 font-medium">GraphQL (Apollo Federation)</span>, and event-driven systems using <span className="text-indigo-600 dark:text-indigo-400 font-medium">Apache Kafka</span>.
             </p>
             <p>
-              I thrive in fast-paced Agile environments, consistently delivering maintainable code with high test coverage and automating workflows to improve release stability.
+              I deliver production-ready code with 95%+ unit test coverage, reduce QA effort by 50%, and improve system reliability through robust CI/CD pipelines. Adept at Agile methodologies, cross-functional collaboration, and mentoring junior developers.
             </p>
           </div>
 
@@ -52,7 +50,7 @@ function AboutMe() {
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           {/* Stat Card 1 */}
           <div className="glass-card p-6 flex flex-col items-center justify-center text-center space-y-2">
-            <span className="text-4xl font-bold text-indigo-500 dark:text-indigo-400">2+</span>
+            <span className="text-4xl font-bold text-indigo-500 dark:text-indigo-400">3+</span>
             <span className="text-sm text-slate-500 uppercase tracking-wider font-semibold">Years Experience</span>
           </div>
 

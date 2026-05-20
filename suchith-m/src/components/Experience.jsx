@@ -5,10 +5,10 @@ function Experience() {
       role: "Senior Associate Software Development Engineer",
       duration: "March 2025 - Present",
       description: [
-        "Built and scaled NestJS-based backend services with comprehensive unit and integration testing using Jest, reducing production defects by 35%.",
-        "Designed and deployed a Kafka-based asynchronous consumer pipeline for data ingestion, automating data workflows and saving 10+ hours per week.",
-        "Modernized legacy MongoDB Realm Function GraphQL services by migrating to Apollo Federation, improving schema governance and reducing post-release incidents by 25%.",
-        "Partnered with DevOps teams to strengthen CI/CD pipelines, enabling zero-downtime deployments and improving overall release reliability."
+      "Architected and scaled NestJS-based microservices with comprehensive unit and integration testing using Jest, achieving 95%+ code coverage and reducing production defects by 35%.",
+        "Designed and deployed an Apache Kafka-based asynchronous consumer pipeline for large-scale data ingestion, automating ETL workflows and saving 10+ engineering hours per week.",
+        "Led migration of legacy MongoDB Realm Function GraphQL services to Apollo Federation architecture, improving schema governance, enabling independent service deployment, and reducing post-release incidents by 25%.",
+        "Collaborated with DevOps teams to strengthen CI/CD pipelines using Docker and GitLab CI, enabling zero-downtime deployments and improving release reliability by 40%."
       ]
     },
     {
@@ -16,10 +16,11 @@ function Experience() {
       role: "Software Development Engineer I",
       duration: "July 2022 - April 2024",
       description: [
-        "Designed, built, and maintained full-stack applications using MERN and MEAN stacks, supporting 1000+ daily active users.",
-        "Optimized RESTful APIs, reducing average response times by 30% (3s → 2.1s) and improving overall application performance.",
-        "Delivered responsive, scalable UIs from Figma designs, ensuring consistent user experience across devices and browsers.",
-        "Implemented Redux and RxJS–based state management, reducing UI interaction latency by 25% and improving data flow reliability."
+        "Designed, developed, and maintained 5+ full-stack web applications using MERN (MongoDB, Express.js, React.js, Node.js) and MEAN (MongoDB, Express.js, Angular, Node.js) stacks, supporting 1,000+ daily active users.",
+        "Optimized RESTful API performance through query optimization, caching strategies, and pagination, reducing average response times by 30% (from 3s to 2.1s).",
+        "Translated Figma design mockups into pixel-perfect, responsive, and accessible UIs using React.js, Angular, HTML5, CSS3, and Sass, ensuring cross-browser and cross-device compatibility.",
+        "Implemented Redux and RxJS-based state management architectures, reducing UI interaction latency by 25% and improving real-time data flow reliability.",
+        "Wrote comprehensive unit and integration tests achieving 90%+ code coverage, reducing QA cycle time by 50%."
       ]
     },
     {
@@ -27,9 +28,9 @@ function Experience() {
       role: "Software Development Engineer Internship",
       duration: "February 2022 - June 2022",
       description: [
-        "Delivered cross-platform mobile apps using Ionic, accelerating feature delivery by 30% over native builds.",
-        "Implemented and validated RESTful APIs supporting real-time workflows, reducing latency by 40%.",
-        "Partnered with senior engineers to refine UI/UX interactions, improving usability metrics by 15% and reducing reported issues by 25%."
+        "Developed cross-platform mobile applications using Ionic and Capacitor, accelerating feature delivery by 30% compared to native development.",
+        "Built and validated RESTful APIs using Node.js and Express.js supporting real-time workflows, reducing API response latency by 40%.",
+        "Collaborated with senior engineers to refine UI/UX interactions based on user feedback, improving usability metrics by 15% and reducing reported issues by 25%."
       ]
     }
   ];

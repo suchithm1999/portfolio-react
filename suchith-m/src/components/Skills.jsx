@@ -1,20 +1,28 @@
 function Skills() {
   const skillCategories = [
     {
+      title: "Languages",
+      skills: ["JavaScript (ES6+)", "TypeScript", "HTML5", "CSS3", "Sass"]
+    },
+    {
       title: "Frontend",
-      skills: ["ReactJS", "Angular", "HTML5", "CSS3", "Sass", "JavaScript (ES6+)", "TypeScript", "Tailwind CSS"]
+      skills: ["React.js", "Angular", "Redux", "Redux Toolkit", "React Hooks", "RxJS"]
     },
     {
       title: "Backend",
-      skills: ["Node.js", "NestJS", "Express.js", "MongoDB", "REST APIs", "Kafka", "Microservices"]
+      skills: ["Node.js", "NestJS", "Express.js", "REST APIs", "GraphQL", "Apollo Federation", "Microservices"]
     },
     {
-      title: "Mobile",
-      skills: ["Ionic", "Capacitor", "Cordova"]
+      title: "Databases & Messaging",
+      skills: ["MongoDB", "Mongoose", "Apache Kafka"]
     },
     {
-      title: "Tools & DevOps",
-      skills: ["Git", "GitHub", "GitLab", "CI/CD", "JIRA", "Agile (Scrum)", "Jest", "Postman"]
+      title: "Testing",
+      skills: ["Jest", "Unit Testing", "Integration Testing", "E2E Testing", "TDD"]
+    },
+    {
+      title: "DevOps & Tools",
+      skills: ["Git", "GitHub", "GitLab", "Docker", "GitLab CI", "Agile (Scrum)", "Code Review", "Pair Programming"]
     }
   ];
 
@@ -34,7 +42,7 @@ function Skills() {
         </div>
 
         {/* Skills Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {skillCategories.map((category, index) => (
             <div key={index} className="glass-card p-8 space-y-6 hover:border-indigo-500/30 transition-colors">
               <h3 className="text-xl font-bold text-indigo-600 dark:text-indigo-300 border-l-4 border-indigo-500 pl-3">
